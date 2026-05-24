@@ -1,7 +1,46 @@
 // Baladi Hypermarket - Core JavaScript & Cart Management
 
 // 1. Mock Product Dataset (structured to scale up to 3000 products easily)
-const PRODUCTS = [];
+const PRODUCTS = [
+  // Let's Groove Audio Section Products
+  {
+    id: "buds-wireless-5-anc",
+    name: "realme Buds Wireless 5 ANC",
+    price: 1399.00,
+    unit: "pc",
+    category: "audio",
+    image: "https://image01.realme.net/general/20250109/1736415319795d54ca63564df4a429066610426dbb975.png.webp?width=1440&height=1440&size=376999",
+    tag: "Groove"
+  },
+  {
+    id: "buds-air7",
+    name: "realme Buds Air7",
+    price: 2699.00,
+    unit: "pc",
+    category: "audio",
+    image: "https://image01.realme.net/general/20250317/17422067439182f5867123e114ce09d2ef0306d1a8f9b.png.webp?width=1440&height=1440&size=1025011",
+    tag: "Groove"
+  },
+  {
+    id: "buds-air7-pro",
+    name: "realme Buds Air7 Pro",
+    price: 4499.00,
+    unit: "pc",
+    category: "audio",
+    image: "https://image01.realme.net/general/20250519/1747633988406ef120377e0d14fc68f95246e96625de1.png.webp?width=1440&height=1440&size=813046",
+    tag: "Groove"
+  },
+  {
+    id: "techlife-studio-h1",
+    name: "realme Techlife Studio H1",
+    price: 3999.00,
+    unit: "pc",
+    category: "audio",
+    image: "https://image01.realme.net/general/20241014/17288795936668c68fced6fb04cdb9365c8915f7fbd77.png.webp?width=1440&height=1440&size=282698",
+    tag: "Groove"
+  },
+  // Groceries & Fresh Food
+];
 
 // Helper to render product image (either URL or Emoji)
 function getProductImageHTML(imageStr, name, extraStyle = '') {
@@ -214,7 +253,7 @@ function renderProductGrid(filterCategory = 'all', searchQuery = '', filterSubca
   }
 
   // Set the product count badge if it exists
-  const countBadge = document.querySelector('.product-count-badge');
+  const countBadge = document.getElementById('product-count') || document.querySelector('.product-count-badge');
   if (countBadge) {
     countBadge.textContent = `${filtered.length} Items`;
   }
