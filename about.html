@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us & Customer Policies - Baladi Hypermarket</title>
+  <link rel="icon" type="image/png" href="Baladi_Hypermarket_Door.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/policies.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body data-category="about">
+
+  <!-- Header -->
+  <header>
+    <div class="nav-container">
+      <button class="mobile-menu-trigger" aria-label="Toggle Menu" style="background: none; border: none; font-size: 1.5rem; color: white; cursor: pointer; display: flex; align-items: center;">
+        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+      <a href="index.html" class="logo" style="display: flex; align-items: center;">
+        <img src="Baladi_Hypermarket_Door.png" alt="Baladi Hypermarket Logo" style="height: 45px; width: auto; object-fit: contain;">
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">All Categories</a></li>
+          <li><a href="fresh-food.html">Fresh Food</a></li>
+          <li><a href="fruits-veg.html">Fruits & Veg</a></li>
+          <li><a href="food-cupboard.html">Food Cupboard</a></li>
+                    <li><a href="beverages.html">Beverages</a></li>
+      <li style="margin-top: 2rem;"><a href="about.html">About & Policies</a></li>
+      <li><a href="return.html">Return Policy</a></li>
+      <li><a href="warranty.html">Service & Warranty</a></li>
+      <li><a href="accessibility.html">Website Accessibility</a></li>
+          <li style="margin-left: 2rem;"><a href="about.html" class="active">About & Policies</a></li>
+
+          <li style="margin-left: 2rem;"><a href="about.html" class="active">About & Policies</a></li>
+
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <div class="search-box">
+          <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="1.1em" width="1.1em" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" placeholder="Search..." id="search-input">
+        </div>
+        <button class="cart-trigger">
+          <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="1.2em" width="1.2em" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span>My Cart</span>
+          <span class="cart-badge">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-overlay"></div>
+  <div class="mobile-nav-drawer">
+    <div class="drawer-header">
+      <h3>Baladi Categories</h3>
+      <button class="drawer-close-btn">&times;</button>
+    </div>
+        <ul class="mobile-menu-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="fresh-food.html">Fresh Food</a></li>
+      <li><a href="fruits-veg.html">Fruits & Veg</a></li>
+      <li><a href="food-cupboard.html">Food Cupboard</a></li>
+      <li><a href="beverages.html">Beverages</a></li>
+      <li style="margin-top: 2rem;"><a href="about.html">About & Policies</a></li>
+      <li><a href="return.html">Return Policy</a></li>
+      <li><a href="warranty.html">Service & Warranty</a></li>
+      <li><a href="accessibility.html">Website Accessibility</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <p style="font-weight: 700; color: var(--primary);">Hotline Order</p>
+      <p style="font-size: 1.1rem; font-weight: 800; color: var(--secondary); margin-top: 0.25rem;">0526278571</p>
+    </div>
+  </div>
+
+  <main class="page-container">
+    <!-- Google Review Section -->
+    <section class="google-review-section">
+      <div class="google-review-content">
+        <h2 class="google-review-title">
+          Review Us on Google
+          <span class="google-review-stars">★★★★★</span>
+        </h2>
+        <p class="google-review-text">
+          Your feedback helps us grow. Share your shopping experience at Baladi Hypermarket with the community!
+        </p>
+      </div>
+      <div class="google-review-action">
+        <a href="https://www.google.com/search?q=baladi+hypermarket&oq=baladi+&gs_lcrp=EgZjaHJvbWUqDAgCEAAYFBiHAhiABDIGCAAQRRg5MgwIARAjGCcYgAQYigUyDAgCEAAYFBiHAhiABDIMCAMQABgUGIcCGIAEMgcIBBAAGIAEMgYIBRBFGDwyBggGEEUYPTIGCAcQRRg90gEINTU3MGowajSoAgCwAgE&sourceid=chrome&ie=UTF-8#lrd=0x3e5f59c3b38469f5:0xe8dafd806cca13f3,3,,,," target="_blank" class="google-review-btn">
+          <span>Write a Review</span>
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1.1em" width="1.1em" xmlns="http://www.w3.org/2000/svg">
+            <path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm173.5 471.5l-216 216c-4.7 4.7-12.3 4.7-17 0l-8-8c-4.7-4.7-4.7-12.3 0-17L630 512 444.5 326.5c-4.7-4.7-4.7-12.3 0-17l8-8c4.7-4.7 12.3-4.7 17 0l216 216c4.7 4.7 4.7 12.3 0 17z"></path>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" style="text-align: center;">
+      <img src="Baladi_Hypermarket_Door.png" alt="Baladi Hypermarket Logo" style="width: 320px; height: auto; object-fit: contain; margin: 0 auto 2rem; display: block; filter: drop-shadow(0 10px 15px rgba(0,0,0,0.08));">
+      <h2>Our Story</h2>
+      <p style="text-align: left;">At Baladi Hypermarket, our mission is simple: to bring genuine joy, quality, and convenience to our customers through premium retail and grocery experiences. From organic farm fruits & fresh vegetables to food cupboard staples, dairy, and cold beverages, we carefully curate our offerings to match your lifestyle. But we believe convenience is more than just quality products — it is built on a foundation of trust, complete transparency, and stellar customer care.</p>
+      <p style="text-align: left;">To ensure we always meet your needs and protect your journey with us, we have drafted detailed, clear, and comprehensive policies. Please browse our guidelines. You can read our general <a href="terms.html">Terms & Conditions</a>, check our standard <a href="return.html">Return Policy</a>, or review our commitment to inclusion in our <a href="accessibility.html">Website Accessibility Policy</a>. You can also learn how we protect your personal information in our <a href="privacy.html">Privacy Policy</a>, review standard brand warranties in our <a href="warranty.html">Service & Warranty Policy</a>, and explore our extended protection plans in our <a href="tech-shield.html">Tech Shield Policy</a>.</p>
+      
+      <div class="about-social-links" style="display: flex; gap: 1rem; margin-top: 2rem; justify-content: center;">
+        <a href="https://www.instagram.com/baladihypermarket?igsh=MTdlaDB1cmY0YzY4dg==" target="_blank" class="social-btn instagram-btn" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; border-radius: var(--radius-sm); background: #e1306c; color: white; font-weight: 700; transition: var(--transition); font-size: 0.95rem; box-shadow: var(--shadow-sm);">
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1.1em" width="1.1em" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.9c-41.4 0-75-33.6-75-75s33.6-75 75-75 75 33.6 75 75-33.6 75-75 75zm132.5-224.4c-15.4 0-27.8 12.5-27.8 27.8s12.5 27.8 27.8 27.8 27.8-12.5 27.8-27.8-12.5-27.8-27.8-27.8zm116.2 59.8c-4.4-93.5-25.9-165.7-94.8-166-68.9-.3-72.3 0-213.2 0-140.9 0-162.3 71.9-166.7 166.2-4.4 93.3-4.4 220 0 313.2 4.3 94.3 25.8 166.5 94.8 166.8 68.9.3 72.3 0 213.2 0 140.9 0 162.3-71.9 166.7-166.2 4.4-93.3 4.4-220 0-313.2zm-53.1 364.5c-30.7 76.8-90.4 136.5-167.2 167.2-113.2 45.2-381.1 39.7-494.3 0-76.8-30.7-136.5-90.4-167.2-167.2-45.2-113.2-39.7-381.1 0-494.3 30.7-76.8 90.4-136.5 167.2-167.2 113.2-45.2 381.1-39.7 494.3 0 76.8 30.7 136.5 90.4 167.2 167.2 45.2 113.2 39.7 381.1 0 494.3z"></path></svg>
+          Instagram
+        </a>
+        <a href="https://www.tiktok.com/@baladi_hypermarket?_r=1&_t=ZS-96btqDsaCqi" target="_blank" class="social-btn tiktok-btn" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; border-radius: var(--radius-sm); background: #000000; color: white; font-weight: 700; transition: var(--transition); font-size: 0.95rem; box-shadow: var(--shadow-sm);">
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1.1em" width="1.1em" xmlns="http://www.w3.org/2000/svg"><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"></path></svg>
+          TikTok
+        </a>
+      </div>
+    </section>
+
+    <!-- Grid Links to Policy Pages -->
+    <section class="grid-links">
+      
+      <a href="terms.html" class="policy-link-card">
+        <h3>Terms & Conditions</h3>
+        <p>Read about your legal agreements, order eligibility, payments, and standard retail purchase conditions with us.</p>
+      </a>
+
+      <a href="return.html" class="policy-link-card">
+        <h3>Return Policy</h3>
+        <p>Learn about our standard return windows, item eligibility criteria, exchanges, and how refunds are processed.</p>
+      </a>
+
+      <a href="accessibility.html" class="policy-link-card">
+        <h3>Website Accessibility</h3>
+        <p>Discover our ongoing commitments, accessibility features, and tools implemented to support all website users.</p>
+      </a>
+
+      <a href="privacy.html" class="policy-link-card">
+        <h3>Privacy Policy</h3>
+        <p>Understand how we collect, store, and protect your personal data, and details about your rights and cookie settings.</p>
+      </a>
+
+      <a href="warranty.html" class="policy-link-card">
+        <h3>Service & Warranty</h3>
+        <p>Review manufacturer warranty coverages, claims processing, timelines, and our service commitments.</p>
+      </a>
+
+      <a href="tech-shield.html" class="policy-link-card">
+        <h3>Tech Shield</h3>
+        <p>Explore our premium extended warranty plans, plan tiers, accidental damage protections, and claim procedures.</p>
+      </a>
+
+    </section>
+  </main>
+
+  <!-- Cart Drawer Overlay -->
+  <div class="cart-overlay"></div>
+
+  <!-- Cart Drawer -->
+  <div class="cart-drawer">
+    <div class="cart-header">
+      <h3>Shopping Cart</h3>
+      <button class="cart-close">&times;</button>
+    </div>
+    <div class="cart-items-container"></div>
+    <div class="cart-footer">
+      <div class="cart-summary-row">
+        <span>Subtotal</span>
+        <span class="subtotal-value">AED 0.00</span>
+      </div>
+      <div class="cart-summary-row">
+        <span>VAT (5%)</span>
+        <span class="vat-value">AED 0.00</span>
+      </div>
+      <div class="cart-summary-row total">
+        <span>Grand Total</span>
+        <span class="total-value">AED 0.00</span>
+      </div>
+      <button class="checkout-btn" disabled>
+        Proceed to Checkout
+        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="1.1em" width="1.1em" xmlns="http://www.w3.org/2000/svg">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Checkout Modal Overlay -->
+  <div class="checkout-modal-overlay">
+    <div class="checkout-modal">
+      <div class="modal-header">
+        <h3>Invoice Details</h3>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="checkout-form">
+          <div class="form-group">
+            <label for="cust-name">Full Name</label>
+            <input type="text" id="cust-name" required placeholder="e.g. John Doe">
+          </div>
+          <div class="form-group">
+            <label for="cust-phone">WhatsApp Number</label>
+            <input type="tel" id="cust-phone" required placeholder="e.g. 0526278571">
+          </div>
+          <div class="form-group">
+            <label for="cust-delivery">Fulfillment Method</label>
+            <select id="cust-delivery">
+              <option value="pickup">Store Self-Pickup</option>
+              <option value="delivery"> Fast Home Delivery (AED 10.00)</option>
+            </select>
+          </div>
+          <button type="submit" class="whatsapp-share-btn" style="margin-top: 1.5rem;">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1.2em" width="1.2em" xmlns="http://www.w3.org/2000/svg">
+              <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L3 472l109.9-28.8c32.7 17.9 69.4 27.3 107.1 27.3 122.4 0 222-99.6 222-222 0-59.3-23.2-115-65.1-157.1zM223.9 446.7c-33.1 0-65.6-8.9-93.9-25.7l-6.7-4-65.3 17.1 17.4-63.7-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path>
+            </svg>
+            Generate PDF & Checkout WhatsApp
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+    <footer>
+    <div class="footer-container">
+      <div class="footer-about">
+        <img src="Baladi_Hypermarket_Door.png" alt="Baladi Hypermarket Logo" style="height: 50px; width: auto; object-fit: contain; margin-bottom: 1rem; display: block;">
+        <p style="font-size: 0.95rem; font-weight: 600; color: #ffffff; margin-bottom: 0.25rem;" data-i18n="footer-visit-heading">Visit Us:</p>
+        <p style="font-size: 0.85rem; color: var(--secondary); margin-bottom: 0.5rem;" data-i18n="footer-visit-value">Al Naseem Street - Al Rashidiya 1 - Ajman</p>
+        <p style="font-size: 0.85rem; color: #cbd5e1; margin-bottom: 0.75rem;" data-i18n="footer-timings">Timings: Closes 2 AM - Reopens 8 AM</p>
+        <a href="https://www.google.com/search?q=baladi+hypermarket&oq=baladi+&gs_lcrp=EgZjaHJvbWUqDAgCEAAYFBiHAhiABDIGCAAQRRg5MgwIARAjGCcYgAQYigUyDAgCEAAYFBiHAhiABDIMCAMQABgUGIcCGIAEMgcIBBAAGIAEMgYIBRBFGDwyBggGEEUYPTIGCAcQRRg90gEINTU3MGowajSoAgCwAgE&sourceid=chrome&ie=UTF-8#lrd=0x3e5f59c3b38469f5:0xe8dafd806cca13f3,3,,,," target="_blank" class="footer-review-btn" data-i18n="footer-review">Leave a Review â˜…â˜…â˜…â˜…â˜…</a>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.8398457007797!2d55.438865!3d25.4093006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f59c3b38469f5%3A0xe8dafd806cca13f3!2sBaladi%20Hypermarket!5e0!3m2!1sen!2sae!4v1716499800000!5m2!1sen!2sae" width="100%" height="120" style="border:0; border-radius: 8px; margin-top: 1rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="footer-links">
+        <h4 data-i18n="footer-depts">Departments</h4>
+        <ul>
+          <li><a href="fresh-food.html">Fresh Food</a></li>
+          <li><a href="fruits-veg.html">Fruits & Veg</a></li>
+          <li><a href="food-cupboard.html">Food Cupboard</a></li>
+                    <li><a href="beverages.html">Beverages</a></li>
+
+
+
+
+</ul>
+      </div>
+      <div class="footer-links">
+        <h4 data-i18n="footer-care">Customer Care</h4>
+        <ul>
+          <li><a href="about.html" data-i18n="footer-about-policies">About & Policies</a></li>
+          <li><a href="terms.html" data-i18n="footer-terms">Terms & Conditions</a></li>
+          <li><a href="return.html" data-i18n="footer-return">Return Policy</a></li>
+          <li><a href="privacy.html" data-i18n="footer-privacy">Privacy Policy</a></li>
+          <li><a href="warranty.html" data-i18n="footer-warranty">Service & Warranty</a></li>
+          <li><a href="tech-shield.html" data-i18n="footer-tech-shield">Tech Shield</a></li>
+          <li><a href="accessibility.html" data-i18n="footer-accessibility">Website Accessibility</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4 data-i18n="footer-contact">Contact Hotline</h4>
+        <p>
+          <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          0526278571
+        </p>
+        <p>
+          <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          support@baladi.com
+        </p>
+        <p>
+          <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+          24/7 Service
+        </p>
+      </div>
+    </div>
+    <div class="copyright" data-i18n="footer-rights">
+      &copy; 2026 Baladi Hypermarket. All Rights Reserved. Designed by skids.
+    </div>
+  </footer>
+
+  <script src="js/cart.js"></script>
+</body>
+</html>

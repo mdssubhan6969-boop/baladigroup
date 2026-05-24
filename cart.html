@@ -1,0 +1,1055 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - Baladi Hypermarket</title>
+  <meta name="description" content="Review your shopping cart, apply coupons, and checkout via WhatsApp at Baladi Hypermarket.">
+  <link rel="icon" type="image/png" href="Baladi_Hypermarket_Door.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <style>
+    /* Autocomplete location dropdown */
+    .autocomplete-container {
+      position: relative;
+      width: 100%;
+    }
+    .autocomplete-items {
+      position: absolute;
+      border: 1px solid #e5e7eb;
+      border-top: none;
+      z-index: 1050;
+      top: 100%;
+      left: 0;
+      right: 0;
+      max-height: 220px;
+      overflow-y: auto;
+      background-color: #fff;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+      border-radius: 0 0 8px 8px;
+    }
+    .autocomplete-item {
+      padding: 10px 14px;
+      cursor: pointer;
+      background-color: #fff;
+      border-bottom: 1px solid #f3f4f6;
+      text-align: left;
+      font-size: 0.9rem;
+      color: var(--text-dark);
+      transition: background 0.15s ease;
+    }
+    .autocomplete-item:hover {
+      background-color: #f3f4f6;
+    }
+    .autocomplete-item strong {
+      color: #16a34a;
+      font-weight: 700;
+    }
+
+    /* Free Delivery Banner card */
+    .free-delivery-banner {
+      background: linear-gradient(135deg, #15803d, #22c55e);
+      color: white;
+      padding: 1.25rem;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 12px rgba(22, 163, 74, 0.15);
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .free-delivery-title {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+    .free-delivery-truck {
+      font-size: 1.4rem;
+      display: inline-block;
+      animation: truckPulse 2.2s infinite ease-in-out;
+    }
+    .free-delivery-status {
+      font-size: 0.88rem;
+      font-weight: 700;
+    }
+    .free-delivery-status.orange {
+      color: #fef08a; /* soft bright yellow */
+    }
+    .free-delivery-status.green {
+      color: #bbf7d0; /* soft green */
+    }
+
+    @keyframes truckPulse {
+      0%, 100% { transform: scale(1) translateX(0); }
+      50% { transform: scale(1.1) translateX(6px); }
+    }
+
+    /* Custom Stepper Styles (Quantity Stepper Buttons) */
+    .cp-qty-btn {
+      width: 32px !important;
+      height: 32px !important;
+      border-radius: 50% !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      font-size: 1.15rem !important;
+      font-weight: 700 !important;
+      cursor: pointer !important;
+      transition: all 0.2s ease !important;
+      outline: none !important;
+      padding: 0 !important;
+      box-sizing: border-box !important;
+      line-height: 1 !important;
+    }
+    
+    /* - button: light green outline */
+    .cp-qty-btn.decrease-btn {
+      border: 2px solid #86efac !important;
+      background: #fff !important;
+      color: #16a34a !important;
+    }
+    .cp-qty-btn.decrease-btn:hover {
+      background: #e8f5e9 !important;
+      border-color: #22c55e !important;
+    }
+    
+    /* + button: solid green */
+    .cp-qty-btn.increase-btn {
+      border: 2px solid #16a34a !important;
+      background: #16a34a !important;
+      color: #fff !important;
+    }
+    .cp-qty-btn.increase-btn:hover {
+      background: #15803d !important;
+      border-color: #15803d !important;
+    }
+
+    /* Address display button & tooltip updates */
+    .cart-address-add-btn {
+      color: #16a34a !important;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .cart-address-add-btn:hover {
+      text-decoration: underline !important;
+      color: #15803d !important;
+    }
+
+    /* Hover highlight for rows */
+    .cp-item:hover {
+      background-color: #f9fafb !important;
+    }
+
+    /* Coupon validation layout styling */
+    .coupon-success-badge {
+      background: #dcfce7;
+      border: 1px solid #bbf7d0;
+      color: #15803d;
+      padding: 0.6rem 0.8rem;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 0.75rem;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .coupon-success-badge .remove-coupon {
+      margin-left: auto;
+      color: #b91c1c;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 1.1rem;
+      padding: 0 4px;
+    }
+    .coupon-success-badge .remove-coupon:hover {
+      color: #ef4444;
+    }
+    .coupon-error-msg {
+      color: #dc2626;
+      font-size: 0.82rem;
+      font-weight: 600;
+      margin-top: 0.5rem;
+      display: block;
+    }
+
+    .cp-trash-btn {
+      background: none;
+      border: none;
+      font-size: 1.15rem;
+      cursor: pointer;
+      padding: 0.3rem;
+      color: #ef4444;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.2s ease, color 0.2s ease;
+      margin-right: 0.4rem;
+    }
+    .cp-trash-btn:hover {
+      transform: scale(1.15);
+      color: #b91c1c;
+    }
+
+    /* Chevron in Coupon Row */
+    .coupon-apply-row span.chevron {
+      margin-left: auto;
+      font-size: 1rem;
+      color: var(--text-light);
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body data-category="cart-page">
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-overlay"></div>
+  <div class="mobile-nav-drawer">
+    <div class="drawer-header">
+      <h3>Baladi Categories</h3>
+      <button class="drawer-close-btn">&times;</button>
+    </div>
+        <ul class="mobile-menu-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="fresh-food.html">Fresh Food</a></li>
+      <li><a href="fruits-veg.html">Fruits & Veg</a></li>
+      <li><a href="food-cupboard.html">Food Cupboard</a></li>
+      <li><a href="beverages.html">Beverages</a></li>
+      <li style="margin-top: 2rem;"><a href="about.html">About & Policies</a></li>
+      <li><a href="return.html">Return Policy</a></li>
+      <li><a href="warranty.html">Service & Warranty</a></li>
+      <li><a href="accessibility.html">Website Accessibility</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <p style="font-weight: 700; color: var(--primary);">Hotline Order</p>
+      <p style="font-size: 1.1rem; font-weight: 800; color: var(--secondary); margin-top: 0.25rem;">0526278571</p>
+    </div>
+  </div>
+
+  <!-- Top Header Bar (same as index.html) -->
+  <header class="top-header">
+    <div class="header-container">
+      <div class="header-left">
+        <button class="hamburger-menu" aria-label="Toggle navigation" style="display:flex;">
+          <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+        <a href="index.html" class="logo" id="header-logo" style="display: flex; align-items: center;">
+          <img src="Baladi_Hypermarket_Door.png" alt="Baladi Hypermarket Logo" style="height: 45px; width: auto; object-fit: contain;">
+        </a>
+        <div class="location-picker">
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 384 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path></svg>
+          <span style="font-weight: 600; color: var(--text-dark); margin-left: 0.2rem;" data-i18n="al-nuaimiya" id="header-location-display">Al Nuaimiya</span>
+        </div>
+      </div>
+      
+      <div class="header-center">
+        <div class="delivery-pills">
+          <div class="pill delivery-scheduled">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M624 352h-16V243.9c0-12.7-5.1-24.9-14.1-33.9L494 110.1c-9-9-21.2-14.1-33.9-14.1H416V48c0-26.5-21.5-48-48-48H112C85.5 0 64 21.5 64 48v48H8c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h56v48H8c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h56v48H8c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h56v112c0 26.5 21.5 48 48 48h24.1c7.1 28.3 32.8 48 63.9 48s56.8-19.7 63.9-48h184.2c7.1 28.3 32.8 48 63.9 48s56.8-19.7 63.9-48H624c8.8 0 16-7.2 16-16v-96c0-8.8-7.2-16-16-16zM208 464c-17.6 0-32-14.4-32-32s14.4-32 32-32 32 14.4 32 32-14.4 32-32 32zm304 0c-17.6 0-32-14.4-32-32s14.4-32 32-32 32 14.4 32 32-14.4 32-32 32zm-64-336v64H416v-64h32zm14.1-32H416v-48h44.1l14.1 14.1V96l-12.1 0z"></path></svg>
+            <span class="pill-title" data-i18n="scheduled">Scheduled</span> <span class="sub-text" data-i18n="get-tomorrow">Get it by Tomorrow</span>
+          </div>
+          <div class="pill delivery-quick">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M496 352h-22.3l-28.7-143.4c-2.3-11.4-12.3-19.6-23.9-19.6h-59.2L329 116.5c-4.1-13-16.1-21.7-29.8-21.7H133.4C115 94.8 100 109.8 100 128.2v16.1c0 6.6 5.4 12 12 12h21v193.3c-28.6 6.5-50.5 32.5-50.5 63.4 0 35.3 28.7 64 64 64 35.3 0 64-28.7 64-64 0-21-10.2-39.7-25.9-51.3l108.5-47.5c6.3 12.8 19.3 21.8 34.5 21.8 12.8 0 24.2-6 31.5-15.3l57.7 25.1c-1.1 5.3-1.8 10.7-1.8 16.3 0 35.3 28.7 64 64 64 35.3 0 64-28.7 64-64 0-33.8-26.3-61.4-59.5-63.8z"></path></svg>
+            <span class="pill-title" data-i18n="quick">Quick</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="header-actions">
+        <div class="language-selector" style="font-weight: 700; font-family: 'Arial'; display:flex; align-items:center; gap:0.2rem; margin-right: 1rem;">عربي <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"></polyline></svg></div>
+        <button class="user-trigger" aria-label="User Account" style="background: none; border: none; font-size: 1.2rem; color: var(--text-dark); cursor: pointer;">
+          <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+        </button>
+        <a href="cart.html" class="cart-trigger" id="cart-btn" style="background: none; border: none; font-size: 1.2rem; color: var(--text-dark); cursor: pointer; position: relative; margin-left: 0.5rem; box-shadow: none; display: flex; align-items: center; justify-content: center; text-decoration: none;">
+          <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="cart-badge" style="background: #e11d48; color: white; border: none; top: -5px; right: -8px;">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Secondary Navigation Bar -->
+  <div class="secondary-header">
+    <div class="header-container">
+      <button class="categories-dropdown-btn">
+        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="1.2em" width="1.2em" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+        <span data-i18n="categories-btn">Categories</span>
+      </button>
+      
+      <nav class="desktop-nav">
+        <ul>
+          <li><a href="index.html" data-i18n="nav-grocery">Grocery</a></li>
+          <li><a href="fresh-food.html" data-i18n="nav-fresh">Fresh Food</a></li>
+          <li><a href="electronics.html" data-i18n="nav-electronics">Electronics</a></li>
+          <li><a href="home.html" data-i18n="nav-home">Home & Living</a></li>
+          <li><a href="festive.html" data-i18n="nav-festive">Festive Collection</a></li>
+          <li><a href="deals.html" style="color: var(--primary);" data-i18n="nav-deals">Deals</a></li>
+        </ul>
+      </nav>
+
+      <div class="search-container">
+        <input type="text" placeholder="Search for &quot;Anything&quot;" id="search-input" data-i18n-placeholder="search-placeholder">
+        <button class="search-btn">
+          <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="1.1em" width="1.1em" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== CART PAGE CONTENT ========== -->
+  <section class="cart-page-section">
+    <h1 class="cart-page-title" data-i18n="cart-title">Cart</h1>
+
+    <div class="cart-page-layout">
+      <!-- LEFT COLUMN: Address + Items (65% width) -->
+      <div class="cart-page-main" style="flex: 0 0 65%;">
+
+        <!-- Delivery Address Banner -->
+        <div class="cart-address-banner">
+          <div class="cart-address-left">
+            <svg stroke="#16a34a" fill="#16a34a" stroke-width="0" viewBox="0 0 384 512" height="1.3em" width="1.3em" xmlns="http://www.w3.org/2000/svg"><path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path></svg>
+            <span class="cart-address-label" data-i18n="address-label">Delivery Address:</span>
+            <span class="cart-address-value" id="cart-address-display" data-i18n="no-address">No address added yet.</span>
+          </div>
+          <a href="#" class="cart-address-add-btn" id="add-address-btn" data-i18n="add-new-address">Add New Address</a>
+        </div>
+
+        <!-- Address Tooltip speech-bubble (if no address is set) -->
+        <div class="cart-address-tooltip" id="address-tooltip" style="display: none; background: #1e293b;">
+          <span data-i18n="address-tooltip">Complete your address to continue.</span>
+          <button class="tooltip-close" id="tooltip-close-btn">&times;</button>
+        </div>
+
+        <!-- Scheduled delivery label header -->
+        <div class="cart-delivery-label" style="border-bottom: 2px solid #f3f4f6; padding-bottom: 0.5rem;">
+          <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="1.2em" width="1.2em" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle; margin-right: 0.3rem;"><rect x="1" y="3" width="15" height="13" rx="2" ry="2"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+          <span style="font-weight: 700; color: #16a34a; font-size: 0.95rem;">Scheduled Delivery</span>
+        </div>
+
+        <!-- Cart Items Container (rendered dynamically) -->
+        <div class="cart-page-items" id="cart-page-items">
+          <!-- Items rendered by JS -->
+        </div>
+
+      </div>
+
+      <!-- RIGHT COLUMN: Savings Corner + Summary (35% width) -->
+      <div class="cart-page-sidebar" style="flex: 0 0 35%;">
+
+        <!-- Free Delivery Banner -->
+        <div class="free-delivery-banner" id="free-delivery-status-card">
+          <!-- Populated dynamically -->
+        </div>
+
+        <!-- Savings Corner -->
+        <div class="cart-sidebar-card savings-corner-card">
+          <h3 class="sidebar-card-title" data-i18n="savings-corner">Savings Corner</h3>
+          <button class="coupon-apply-row" id="open-coupon-btn">
+            <div class="coupon-icon-wrap">
+              <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="1.1em" width="1.1em" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle; margin-right: 0.4rem;"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+            </div>
+            <span data-i18n="apply-coupons">Apply Coupons</span>
+            <span class="chevron">></span>
+          </button>
+          <!-- Applied coupon badge injected here -->
+        </div>
+
+        <!-- Order Summary -->
+        <div class="cart-sidebar-card order-summary-card">
+          <h3 class="sidebar-card-title" data-i18n="order-summary">Order Summary</h3>
+          <div class="summary-row">
+            <span data-i18n="summary-subtotal">Subtotal</span>
+            <span class="summary-val" id="cp-subtotal">AED 0.00</span>
+          </div>
+          <div class="summary-row" id="cp-discount-row" style="display:none;">
+            <span>Coupon Discount (SKIDS10 -10%)</span>
+            <span class="summary-val discount-val" id="cp-discount">- AED 0.00</span>
+          </div>
+          <div class="summary-row">
+            <span>Delivery</span>
+            <span class="summary-val" id="cp-delivery">AED 10.00</span>
+          </div>
+          <div class="summary-row">
+            <span data-i18n="summary-vat">VAT (5%)</span>
+            <span class="summary-val" id="cp-vat">AED 0.00</span>
+          </div>
+          <div class="summary-row total-row">
+            <span data-i18n="summary-total">Total (Incl. VAT)</span>
+            <span class="summary-val total-val" id="cp-total">AED 0.00</span>
+          </div>
+          <button class="cart-checkout-btn" id="cp-checkout-btn" disabled>
+            Continue to Checkout
+          </button>
+          <p class="min-order-warning" id="cp-min-warning" style="display:none;" data-i18n="min-cart-warning">Minimum cart value must be AED 30.00 for delivery</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Coupon Modal -->
+  <div class="coupon-modal-overlay" id="coupon-modal">
+    <div class="coupon-modal">
+      <div class="coupon-modal-header">
+        <h3 data-i18n="coupon-modal-title">Apply Promo Code</h3>
+        <button class="coupon-modal-close" id="coupon-modal-close">&times;</button>
+      </div>
+      <div class="coupon-modal-body">
+        <input type="text" id="coupon-input" placeholder="Enter coupon code (e.g. SKIDS10)" data-i18n-placeholder="enter-coupon-ph">
+        <button class="coupon-apply-btn" id="coupon-apply-btn" data-i18n="apply-btn">Apply</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Address Modal -->
+  <div class="address-modal-overlay" id="address-modal">
+    <div class="address-modal">
+      <div class="address-modal-header">
+        <h3 data-i18n="add-address-title">Add Delivery Address</h3>
+        <button class="address-modal-close" id="address-modal-close">&times;</button>
+      </div>
+      <div class="address-modal-body">
+        <form id="address-form">
+          <div class="form-group">
+            <label for="addr-name" data-i18n="modal-fullname">Full Name</label>
+            <input type="text" id="addr-name" required placeholder="e.g. John Doe">
+          </div>
+          <div class="form-group">
+            <label for="addr-phone" data-i18n="modal-whatsapp">WhatsApp/Phone Number</label>
+            <input type="tel" id="addr-phone" required placeholder="e.g. 0526278571">
+          </div>
+          
+          <!-- Searchable Location Field (Autocomplete) -->
+          <div class="form-group" style="position: relative;">
+            <label for="addr-location">Search Location (Ajman & Sharjah)</label>
+            <input type="text" id="addr-location" autocomplete="off" placeholder="Type area e.g. Al Nuaimiya">
+            <div id="autocomplete-list" class="autocomplete-items" style="display: none;"></div>
+          </div>
+          
+          <div class="form-group">
+            <label for="addr-details" data-i18n="address-details-lbl">Complete Address Details</label>
+            <textarea id="addr-details" rows="2" required placeholder="Select a location from suggestions above to fill, or type full address details."></textarea>
+          </div>
+          
+          <div class="form-group">
+            <label for="addr-notes">Additional Address Notes (Flat/Villa/Building details)</label>
+            <input type="text" id="addr-notes" placeholder="e.g. Flat 402, Al Shaiba Building">
+          </div>
+
+          <div class="address-form-actions">
+            <button type="button" class="addr-cancel-btn" id="addr-cancel-btn" data-i18n="cancel-btn">Cancel</button>
+            <button type="submit" class="addr-save-btn" data-i18n="save-address-btn">Save Address</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Checkout Modal (Pre-existing Invoice form modal) -->
+  <div class="checkout-modal-overlay">
+    <div class="checkout-modal">
+      <div class="modal-header">
+        <h3 data-i18n="modal-invoice-title">Invoice Details</h3>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="checkout-form">
+          <div class="form-group">
+            <label for="cust-name" data-i18n="modal-fullname">Full Name</label>
+            <input type="text" id="cust-name" required placeholder="e.g. John Doe">
+          </div>
+          <div class="form-group">
+            <label for="cust-phone" data-i18n="modal-whatsapp">WhatsApp Number</label>
+            <input type="tel" id="cust-phone" required placeholder="e.g. 0526278571">
+          </div>
+          <div class="form-group">
+            <label for="cust-delivery" data-i18n="modal-fulfillment">Fulfillment Method</label>
+            <select id="cust-delivery">
+              <option value="pickup" data-i18n="modal-pickup">Store Self-Pickup</option>
+              <option value="delivery" data-i18n="modal-delivery"> Fast Home Delivery (AED 10.00)</option>
+            </select>
+          </div>
+          <button type="submit" class="whatsapp-share-btn" style="margin-top: 1.5rem;">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1.2em" width="1.2em" xmlns="http://www.w3.org/2000/svg">
+              <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L3 472l109.9-28.8c32.7 17.9 69.4 27.3 107.1 27.3 122.4 0 222-99.6 222-222 0-59.3-23.2-115-65.1-157.1zM223.9 446.7c-33.1 0-65.6-8.9-93.9-25.7l-6.7-4-65.3 17.1 17.4-63.7-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path>
+            </svg>
+            Generate PDF & Checkout WhatsApp
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cart Drawer (hidden but needed for JS compat) -->
+  <div class="cart-overlay"></div>
+  <div class="cart-drawer" style="display:none;">
+    <div class="cart-header"><h3>Shopping Cart</h3><button class="cart-close">&times;</button></div>
+    <div class="cart-items-container"></div>
+    <div class="cart-footer">
+      <div class="cart-summary-row"><span>Subtotal</span><span class="subtotal-value">AED 0.00</span></div>
+      <div class="cart-summary-row"><span>VAT (5%)</span><span class="vat-value">AED 0.00</span></div>
+      <div class="cart-summary-row total"><span>Grand Total</span><span class="total-value">AED 0.00</span></div>
+      <button class="checkout-btn" disabled>Proceed to Checkout</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+    <footer>
+    <div class="footer-container">
+      <div class="footer-about">
+        <img src="Baladi_Hypermarket_Door.png" alt="Baladi Hypermarket Logo" style="height: 50px; width: auto; object-fit: contain; margin-bottom: 1rem; display: block;">
+        <p style="font-size: 0.95rem; font-weight: 600; color: #ffffff; margin-bottom: 0.25rem;" data-i18n="footer-visit-heading">Visit Us:</p>
+        <p style="font-size: 0.85rem; color: var(--secondary); margin-bottom: 0.5rem;" data-i18n="footer-visit-value">Al Naseem Street - Al Rashidiya 1 - Ajman</p>
+        <p style="font-size: 0.85rem; color: #cbd5e1; margin-bottom: 0.75rem;" data-i18n="footer-timings">Timings: Closes 2 AM - Reopens 8 AM</p>
+        <a href="https://www.google.com/search?q=baladi+hypermarket&oq=baladi+&gs_lcrp=EgZjaHJvbWUqDAgCEAAYFBiHAhiABDIGCAAQRRg5MgwIARAjGCcYgAQYigUyDAgCEAAYFBiHAhiABDIMCAMQABgUGIcCGIAEMgcIBBAAGIAEMgYIBRBFGDwyBggGEEUYPTIGCAcQRRg90gEINTU3MGowajSoAgCwAgE&sourceid=chrome&ie=UTF-8#lrd=0x3e5f59c3b38469f5:0xe8dafd806cca13f3,3,,,," target="_blank" class="footer-review-btn" data-i18n="footer-review">Leave a Review â˜…â˜…â˜…â˜…â˜…</a>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.8398457007797!2d55.438865!3d25.4093006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f59c3b38469f5%3A0xe8dafd806cca13f3!2sBaladi%20Hypermarket!5e0!3m2!1sen!2sae!4v1716499800000!5m2!1sen!2sae" width="100%" height="120" style="border:0; border-radius: 8px; margin-top: 1rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="footer-links">
+        <h4 data-i18n="footer-depts">Departments</h4>
+        <ul>
+          <li><a href="fresh-food.html">Fresh Food</a></li>
+          <li><a href="fruits-veg.html">Fruits & Veg</a></li>
+          <li><a href="food-cupboard.html">Food Cupboard</a></li>
+                    <li><a href="beverages.html">Beverages</a></li>
+
+
+
+</ul>
+      </div>
+      <div class="footer-links">
+        <h4 data-i18n="footer-care">Customer Care</h4>
+        <ul>
+          <li><a href="about.html" data-i18n="footer-about-policies">About & Policies</a></li>
+          <li><a href="terms.html" data-i18n="footer-terms">Terms & Conditions</a></li>
+          <li><a href="return.html" data-i18n="footer-return">Return Policy</a></li>
+          <li><a href="privacy.html" data-i18n="footer-privacy">Privacy Policy</a></li>
+          <li><a href="warranty.html" data-i18n="footer-warranty">Service & Warranty</a></li>
+          <li><a href="tech-shield.html" data-i18n="footer-tech-shield">Tech Shield</a></li>
+          <li><a href="accessibility.html" data-i18n="footer-accessibility">Website Accessibility</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4 data-i18n="footer-contact">Contact Hotline</h4>
+        <p>
+          <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          0526278571
+        </p>
+        <p>
+          <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          support@baladi.com
+        </p>
+        <p>
+          <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+          24/7 Service
+        </p>
+      </div>
+    </div>
+    <div class="copyright" data-i18n="footer-rights">
+      &copy; 2026 Baladi Hypermarket. All Rights Reserved. Designed by skids.
+    </div>
+  </footer>
+
+  <!-- Mobile Bottom Bar -->
+  <div class="mobile-bottom-nav">
+    <a href="index.html" class="nav-item">
+      <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="1.4em" width="1.4em" xmlns="http://www.w3.org/2000/svg"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+      <span data-i18n="mobile-bottom-home">Home</span>
+    </a>
+    <button class="hamburger-menu" aria-label="Toggle navigation" style="display:flex;">
+      <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg">
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+      <span data-i18n="mobile-bottom-menu">Menu</span>
+    </button>
+    <a href="cart.html" class="nav-item active">
+      <div style="position: relative; display: inline-block;">
+        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="1.4em" width="1.4em" xmlns="http://www.w3.org/2000/svg"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+        <span class="cart-badge" style="position: absolute; top: -6px; right: -8px; font-size: 0.65rem; width: 16px; height: 16px; border: 1px solid white;">0</span>
+      </div>
+      <span data-i18n="mobile-bottom-cart">Cart</span>
+    </a>
+    <button class="nav-item search-trigger-btn">
+      <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="1.4em" width="1.4em" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      <span data-i18n="mobile-bottom-search">Search</span>
+    </button>
+  </div>
+
+  <script src="js/translate.js"></script>
+  <script src="js/cart.js"></script>
+  
+  <script>
+    // Ajman & Sharjah Autocomplete Database
+    const LOCATIONS = [
+      // Ajman
+      { name: 'Al Nuaimiya', city: 'Ajman' },
+      { name: 'Al Rashidiya', city: 'Ajman' },
+      { name: 'Al Jurf', city: 'Ajman' },
+      { name: 'Al Hamidiya', city: 'Ajman' },
+      { name: 'Al Rumailah', city: 'Ajman' },
+      { name: 'Al Mowaihat', city: 'Ajman' },
+      { name: 'Al Zahya', city: 'Ajman' },
+      { name: 'Al Naemiyah', city: 'Ajman' },
+      { name: 'Ajman Industrial Area', city: 'Ajman' },
+      { name: 'Al Sawan', city: 'Ajman' },
+      { name: 'Al Bustan', city: 'Ajman' },
+      { name: 'Al Qulayah', city: 'Ajman' },
+      { name: 'Mushairef', city: 'Ajman' },
+      { name: 'Rawda', city: 'Ajman' },
+      { name: 'Emirates City', city: 'Ajman' },
+      { name: 'Horizon Tower', city: 'Ajman' },
+      { name: 'Garden City', city: 'Ajman' },
+      // Sharjah
+      { name: 'Al Wahda', city: 'Sharjah' },
+      { name: 'Al Qasimia', city: 'Sharjah' },
+      { name: 'Al Nahda', city: 'Sharjah' },
+      { name: 'Al Majaz', city: 'Sharjah' },
+      { name: 'Al Taawun', city: 'Sharjah' },
+      { name: 'Al Khan', city: 'Sharjah' },
+      { name: 'Al Mamzar', city: 'Sharjah' },
+      { name: 'Bu Tina', city: 'Sharjah' },
+      { name: 'Halwan', city: 'Sharjah' },
+      { name: 'Muweilah', city: 'Sharjah' },
+      { name: 'University City', city: 'Sharjah' },
+      { name: 'Industrial Area 1-18', city: 'Sharjah' },
+      { name: 'Rolla', city: 'Sharjah' },
+      { name: 'Abu Shagara', city: 'Sharjah' },
+      { name: 'Corniche', city: 'Sharjah' },
+      { name: 'Al Azra', city: 'Sharjah' }
+    ];
+
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Initial Load of Saved Address
+      loadSavedAddress();
+      
+      // 2. Setup Modals
+      setupAddressModal();
+      setupCouponModal();
+      setupCheckoutIntegration();
+      
+      // 3. Render Cart Page Contents
+      renderCartPage();
+    });
+
+    // Load Address from LocalStorage
+    function loadSavedAddress() {
+      const saved = localStorage.getItem('baladi_address');
+      const displayEl = document.getElementById('cart-address-display');
+      const tooltipEl = document.getElementById('address-tooltip');
+      const headerLocEl = document.getElementById('header-location-display');
+      
+      if (saved) {
+        try {
+          const addr = JSON.parse(saved);
+          displayEl.textContent = `${addr.details}${addr.notes ? ' (' + addr.notes + ')' : ''} - ${addr.name}`;
+          
+          if (tooltipEl) tooltipEl.style.display = 'none';
+          
+          // Extrapolate area name to header location display
+          const area = addr.details.split(',')[0].trim();
+          if (headerLocEl) {
+            headerLocEl.textContent = area;
+            headerLocEl.removeAttribute('data-i18n'); // prevent translate override
+          }
+        } catch (e) {
+          displayEl.textContent = 'No address added yet.';
+          if (tooltipEl) tooltipEl.style.display = 'flex';
+        }
+      } else {
+        displayEl.textContent = 'No address added yet.';
+        if (tooltipEl) tooltipEl.style.display = 'flex';
+      }
+    }
+
+    // Modal Control: Address Adding with Autocomplete suggestion list
+    function setupAddressModal() {
+      const addBtn = document.getElementById('add-address-btn');
+      const modal = document.getElementById('address-modal');
+      const closeBtn = document.getElementById('address-modal-close');
+      const cancelBtn = document.getElementById('addr-cancel-btn');
+      const form = document.getElementById('address-form');
+      const locationInput = document.getElementById('addr-location');
+      const suggestionsBox = document.getElementById('autocomplete-list');
+      const tooltipEl = document.getElementById('address-tooltip');
+      const tooltipCloseEl = document.getElementById('tooltip-close-btn');
+
+      if (tooltipCloseEl && tooltipEl) {
+        tooltipCloseEl.addEventListener('click', (e) => {
+          e.preventDefault();
+          tooltipEl.style.display = 'none';
+        });
+      }
+
+      const openModal = () => {
+        modal.classList.add('open');
+        const saved = localStorage.getItem('baladi_address');
+        if (saved) {
+          try {
+            const addr = JSON.parse(saved);
+            document.getElementById('addr-name').value = addr.name || '';
+            document.getElementById('addr-phone').value = addr.phone || '';
+            document.getElementById('addr-details').value = addr.details || '';
+            document.getElementById('addr-notes').value = addr.notes || '';
+          } catch (e) {}
+        }
+      };
+
+      const closeModal = () => {
+        modal.classList.remove('open');
+        locationInput.value = '';
+        suggestionsBox.innerHTML = '';
+        suggestionsBox.style.display = 'none';
+      };
+
+      if (addBtn) addBtn.addEventListener('click', (e) => { e.preventDefault(); openModal(); });
+      if (closeBtn) closeBtn.addEventListener('click', closeModal);
+      if (cancelBtn) cancelBtn.addEventListener('click', closeModal);
+
+      // Suggestions filtering engine
+      locationInput.addEventListener('input', (e) => {
+        const val = e.target.value.toLowerCase().trim();
+        suggestionsBox.innerHTML = '';
+        if (!val) {
+          suggestionsBox.style.display = 'none';
+          return;
+        }
+
+        const matches = LOCATIONS.filter(loc => 
+          loc.name.toLowerCase().includes(val) || 
+          loc.city.toLowerCase().includes(val)
+        );
+
+        if (matches.length === 0) {
+          suggestionsBox.style.display = 'none';
+          return;
+        }
+
+        matches.forEach(loc => {
+          const item = document.createElement('div');
+          item.className = 'autocomplete-item';
+          
+          const index = loc.name.toLowerCase().indexOf(val);
+          let boldedName = loc.name;
+          if (index >= 0) {
+            boldedName = loc.name.substring(0, index) + 
+                         '<strong>' + loc.name.substring(index, index + val.length) + '</strong>' + 
+                         loc.name.substring(index + val.length);
+          }
+          
+          item.innerHTML = `${boldedName}, <span style="color:#6b7280; font-size:0.8rem;">${loc.city}</span>`;
+          
+          item.addEventListener('click', () => {
+            document.getElementById('addr-details').value = `${loc.name}, ${loc.city}, UAE`;
+            locationInput.value = '';
+            suggestionsBox.style.display = 'none';
+          });
+          suggestionsBox.appendChild(item);
+        });
+        suggestionsBox.style.display = 'block';
+      });
+
+      // Close autocomplete on blur
+      document.addEventListener('click', (e) => {
+        if (e.target !== locationInput) {
+          suggestionsBox.style.display = 'none';
+        }
+      });
+
+      // Submit form
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('addr-name').value;
+        const phone = document.getElementById('addr-phone').value;
+        const details = document.getElementById('addr-details').value;
+        const notes = document.getElementById('addr-notes').value;
+
+        localStorage.setItem('baladi_address', JSON.stringify({ name, phone, details, notes }));
+        loadSavedAddress();
+        closeModal();
+        renderCartPage();
+      });
+    }
+
+    // Modal Control: Coupons applying with validate SKIDS10
+    function setupCouponModal() {
+      const openBtn = document.getElementById('open-coupon-btn');
+      const modal = document.getElementById('coupon-modal');
+      const closeBtn = document.getElementById('coupon-modal-close');
+      const applyBtn = document.getElementById('coupon-apply-btn');
+      const input = document.getElementById('coupon-input');
+
+      const closeModal = () => {
+        modal.classList.remove('open');
+        input.value = '';
+        const existingErr = modal.querySelector('.coupon-error-msg');
+        if (existingErr) existingErr.remove();
+      };
+
+      if (openBtn) openBtn.addEventListener('click', () => modal.classList.add('open'));
+      if (closeBtn) closeBtn.addEventListener('click', closeModal);
+
+      if (applyBtn) {
+        applyBtn.addEventListener('click', () => {
+          const code = input.value.toUpperCase().trim();
+          const existingErr = modal.querySelector('.coupon-error-msg');
+          if (existingErr) existingErr.remove();
+
+          if (code === 'SKIDS10') {
+            localStorage.setItem('baladi_coupon', 'SKIDS10');
+            closeModal();
+            renderCartPage();
+          } else {
+            const errSpan = document.createElement('span');
+            errSpan.className = 'coupon-error-msg';
+            errSpan.textContent = 'Invalid coupon code. Use coupon code: SKIDS10';
+            input.parentNode.appendChild(errSpan);
+          }
+        });
+      }
+    }
+
+    // Setup checkout integration popup prefill
+    function setupCheckoutIntegration() {
+      const checkoutBtn = document.getElementById('cp-checkout-btn');
+      if (checkoutBtn) {
+        checkoutBtn.addEventListener('click', () => {
+          const savedAddr = localStorage.getItem('baladi_address');
+          if (!savedAddr) return;
+
+          try {
+            const addr = JSON.parse(savedAddr);
+            const nameEl = document.getElementById('cust-name');
+            const phoneEl = document.getElementById('cust-phone');
+            const deliveryEl = document.getElementById('cust-delivery');
+
+            if (nameEl) nameEl.value = addr.name || '';
+            if (phoneEl) phoneEl.value = addr.phone || '';
+            if (deliveryEl) deliveryEl.value = 'delivery'; // Default to home delivery
+
+            // Open existing invoice checkout details modal (from script.js/cart.js overlay class)
+            const chkModal = document.querySelector('.checkout-modal-overlay');
+            if (chkModal) chkModal.classList.add('open');
+          } catch(e){}
+        });
+      }
+    }
+
+    // Render cart layout contents
+    window.renderCartPage = function() {
+      const itemsContainer = document.getElementById('cart-page-items');
+      if (!itemsContainer) return;
+
+      loadCart(); // defined in cart.js
+
+      const subtotalEl = document.getElementById('cp-subtotal');
+      const discountRow = document.getElementById('cp-discount-row');
+      const discountEl = document.getElementById('cp-discount');
+      const deliveryEl = document.getElementById('cp-delivery');
+      const vatEl = document.getElementById('cp-vat');
+      const totalEl = document.getElementById('cp-total');
+      const checkoutBtn = document.getElementById('cp-checkout-btn');
+      const minWarningEl = document.getElementById('cp-min-warning');
+      const freeDeliveryStatusCard = document.getElementById('free-delivery-status-card');
+
+      if (cart.length === 0) {
+        itemsContainer.innerHTML = `
+          <div class="cart-page-empty">
+            <svg stroke="#9ca3af" fill="none" stroke-width="2" viewBox="0 0 24 24" height="4.5rem" width="4.5rem" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 1.25rem; display: block; margin-left: auto; margin-right: auto;"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+            <h2>Your cart is empty</h2>
+            <p>Explore departments to add quality groceries, fresh food and beverages!</p>
+            <a href="index.html" class="shop-now-btn">Continue Shopping</a>
+          </div>
+        `;
+
+        if (subtotalEl) subtotalEl.textContent = 'AED 0.00';
+        if (discountRow) discountRow.style.display = 'none';
+        if (deliveryEl) deliveryEl.textContent = 'AED 0.00';
+        if (vatEl) vatEl.textContent = 'AED 0.00';
+        if (totalEl) totalEl.textContent = 'AED 0.00';
+        if (checkoutBtn) checkoutBtn.disabled = true;
+        if (minWarningEl) minWarningEl.style.display = 'none';
+
+        if (freeDeliveryStatusCard) {
+          freeDeliveryStatusCard.innerHTML = `
+            <div class="free-delivery-title">
+              <span class="free-delivery-truck">🚛</span>
+              <span>FREE DELIVERY on orders above AED 150</span>
+            </div>
+            <div class="free-delivery-status orange">Add AED 150.00 more for free delivery!</div>
+          `;
+        }
+        return;
+      }
+
+      // Render non-empty list of cart items
+      itemsContainer.innerHTML = cart.map(item => {
+        const itemTotal = item.price * item.quantity;
+        return `
+          <div class="cp-item" data-id="${item.id}">
+            <div style="width: 60px; height: 60px; border-radius: var(--radius-sm); border: 1px solid var(--border); overflow: hidden; display: flex; align-items: center; justify-content: center; flex-shrink: 0; background: #fff;">
+              ${getProductImageHTML(item.image, item.name, 'max-height: 100%; object-fit: contain;')}
+            </div>
+            <div class="cp-item-info">
+              <div class="cp-item-name">${item.name}</div>
+              <div class="cp-item-weight">${item.unit}</div>
+            </div>
+            
+            <!-- Trash bin to remove completely -->
+            <button class="cp-trash-btn" onclick="removeFromCart('${item.id}')" title="Remove entire item"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" height="1.1em" width="1.1em" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle;"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>️</button>
+            
+            <!-- Stepper [-] qty [+] -->
+            <div class="cp-item-controls">
+              <button class="cp-qty-btn decrease-btn" onclick="updateQuantity('${item.id}', 'decrease')">-</button>
+              <span class="cp-qty-val">${item.quantity}</span>
+              <button class="cp-qty-btn increase-btn" onclick="updateQuantity('${item.id}', 'increase')">+</button>
+            </div>
+            
+            <div class="cp-item-price">AED ${itemTotal.toFixed(2)}</div>
+            
+            <!-- Far-right remove button x -->
+            <button class="cp-item-remove" onclick="removeFromCart('${item.id}')" title="Remove item">×</button>
+          </div>
+        `;
+      }).join('');
+
+      // Math calculations
+      const subtotal = getCartTotal();
+      const couponCode = localStorage.getItem('baladi_coupon');
+      const discount = (couponCode === 'SKIDS10') ? subtotal * 0.10 : 0.00;
+      
+      const qualifiesFreeDelivery = subtotal >= 150.00;
+      const deliveryFee = qualifiesFreeDelivery ? 0.00 : 10.00;
+      
+      const vat = (subtotal - discount) * 0.05;
+      const grandTotal = (subtotal - discount) + deliveryFee + vat;
+
+      // Update Order summary UI
+      if (subtotalEl) subtotalEl.textContent = `AED ${subtotal.toFixed(2)}`;
+      
+      // Coupon badge and discount display
+      const savingsCard = document.querySelector('.savings-corner-card');
+      if (savingsCard) {
+        let badgeWrap = document.getElementById('coupon-badge-container');
+        if (!badgeWrap) {
+          badgeWrap = document.createElement('div');
+          badgeWrap.id = 'coupon-badge-container';
+          savingsCard.appendChild(badgeWrap);
+        }
+        
+        if (couponCode === 'SKIDS10') {
+          if (discountRow) discountRow.style.display = 'flex';
+          if (discountEl) discountEl.textContent = `- AED ${discount.toFixed(2)}`;
+          badgeWrap.innerHTML = `
+            <div class="coupon-success-badge">
+              <span>Coupon <strong>SKIDS10</strong> applied! You saved AED ${discount.toFixed(2)}</span>
+              <span class="remove-coupon" onclick="removeCouponCode(event)">×</span>
+            </div>
+          `;
+        } else {
+          if (discountRow) discountRow.style.display = 'none';
+          badgeWrap.innerHTML = '';
+        }
+      }
+
+      if (deliveryEl) {
+        if (deliveryFee === 0) {
+          deliveryEl.textContent = 'FREE';
+          deliveryEl.style.color = '#16a34a';
+        } else {
+          deliveryEl.textContent = `AED ${deliveryFee.toFixed(2)}`;
+          deliveryEl.style.color = 'var(--text-dark)';
+        }
+      }
+
+      if (vatEl) vatEl.textContent = `AED ${vat.toFixed(2)}`;
+      if (totalEl) totalEl.textContent = `AED ${grandTotal.toFixed(2)}`;
+
+      // Free Delivery Banner Card
+      if (freeDeliveryStatusCard) {
+        if (qualifiesFreeDelivery) {
+          freeDeliveryStatusCard.innerHTML = `
+            <div class="free-delivery-title">
+              <span class="free-delivery-truck">🚛</span>
+              <span>FREE DELIVERY on orders above AED 150</span>
+            </div>
+            <div class="free-delivery-status green">✓ You qualify for FREE delivery!</div>
+          `;
+        } else {
+          const needed = 150.00 - subtotal;
+          freeDeliveryStatusCard.innerHTML = `
+            <div class="free-delivery-title">
+              <span class="free-delivery-truck">🚛</span>
+              <span>FREE DELIVERY on orders above AED 150</span>
+            </div>
+            <div class="free-delivery-status orange">Add AED ${needed.toFixed(2)} more for free delivery!</div>
+          `;
+        }
+      }
+
+      // Minimum Warning warning
+      if (minWarningEl) {
+        if (subtotal < 30.00) {
+          minWarningEl.style.display = 'block';
+        } else {
+          minWarningEl.style.display = 'none';
+        }
+      }
+
+      // Checkout Button Enable/Disable
+      const addressSaved = localStorage.getItem('baladi_address') !== null;
+      if (checkoutBtn) {
+        if (addressSaved && subtotal >= 30.00) {
+          checkoutBtn.disabled = false;
+        } else {
+          checkoutBtn.disabled = true;
+        }
+      }
+    };
+
+    // Remove Coupon Helper
+    window.removeCouponCode = function(e) {
+      e.preventDefault();
+      localStorage.removeItem('baladi_coupon');
+      renderCartPage();
+    };
+
+    // Capture click events on cart buttons to prevent drawer popup on cart.html
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.cart-trigger, .cart-trigger-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          e.stopImmediatePropagation();
+        }, true);
+      });
+    });
+  </script>
+</body>
+</html>
