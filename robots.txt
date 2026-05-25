@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /cart.html
+Disallow: /category_cards.html
+
+Sitemap: https://baladihypermarket.com/sitemap.xml

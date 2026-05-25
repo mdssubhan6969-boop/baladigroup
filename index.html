@@ -1,16 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>Baladi Hypermarket | Online Grocery Delivery in Ajman, UAE</title>
+  <meta name="description" content="Shop fresh fruits, vegetables, dairy, meat, seafood, cupboard essentials, & beverages online at Baladi Hypermarket. Fast delivery in Ajman. Order via WhatsApp!">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://baladihypermarket.com/" />
+  <meta property="og:title" content="Baladi Hypermarket | Online Grocery Delivery in Ajman, UAE" />
+  <meta property="og:description" content="Shop fresh fruits, vegetables, dairy, meat, seafood, cupboard essentials, & beverages online at Baladi Hypermarket. Fast delivery in Ajman. Order via WhatsApp!" />
+  <meta property="og:image" content="https://baladihypermarket.com/Baladi_Hypermarket_Door.png" />
+  <meta property="og:url" content="https://baladihypermarket.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Baladi Hypermarket" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Baladi Hypermarket | Online Grocery Delivery in Ajman, UAE" />
+  <meta name="twitter:description" content="Shop fresh fruits, vegetables, dairy, meat, seafood, cupboard essentials, & beverages online at Baladi Hypermarket. Fast delivery in Ajman. Order via WhatsApp!" />
+  <meta name="twitter:image" content="https://baladihypermarket.com/Baladi_Hypermarket_Door.png" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GroceryStore",
+  "name": "Baladi Hypermarket",
+  "image": "https://baladihypermarket.com/Baladi_Hypermarket_Door.png",
+  "@id": "https://baladihypermarket.com/#store",
+  "url": "https://baladihypermarket.com/",
+  "telephone": "+971526278571",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Al Naseem Street, Al Rashidiya 1",
+    "addressLocality": "Ajman",
+    "addressRegion": "Ajman",
+    "postalCode": "00000",
+    "addressCountry": "AE"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.4093,
+    "longitude": 55.4389
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+    ],
+    "opens": "08:00",
+    "closes": "02:00"
+  },
+  "sameAs": [
+    "https://www.facebook.com/baladihypermarket",
+    "https://www.instagram.com/baladihypermarket"
+  ]
+}
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Baladi Hypermarket - Premium Quality Online Grocery Shopping</title>
-  <meta name="description" content="Shop fresh food, quality fruits, vegetables, cupboard essentials, and cold beverages online. Download your invoice instantly and checkout via WhatsApp.">
+  
+  
   <link rel="icon" type="image/png" href="Baladi_Hypermarket_Door.png">
   <link rel="stylesheet" href="css/style.css">
   <!-- jsPDF CDN for PDF invoice creation -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 <body data-category="all">
+
+  <!-- Top Promo Announcement Bar -->
+  <div class="promo-announcement-bar">
+    <div class="promo-content">
+      <span class="promo-icon">🚚</span>
+      <span>Enjoy <strong>FREE DELIVERY</strong> on orders above <strong>AED 150</strong>! Shop now!</span>
+    </div>
+  </div>
 
   <!-- Top Header Bar -->
   <header class="top-header">
@@ -124,22 +183,19 @@
   <!-- Hero section removed as per design request -->
 
   <!-- Live Flash Deals Section -->
-  <section class="categories-container" style="padding-top: 3rem; padding-bottom: 0;">
+  <section class="categories-container" style="padding-top: 3rem; padding-bottom: 0; overflow: hidden;">
     <div class="section-header">
       <h2 style="display: flex; align-items: center; gap: 0.5rem;">Live Flash Deals <span class="live-pulse"></span></h2>
-      <span class="deal-countdown" id="deal-timer">Calculating...</span>
+      <span class="deal-countdown" id="deal-timer">Loading...</span>
     </div>
-    <div class="deals-grid" id="live-deals-grid">
-      <!-- Live Deals render dynamically here -->
+    <div class="flash-deals-rows-container" id="live-deals-rows-container">
+      <!-- 5 sliding rows will be generated dynamically by JS -->
     </div>
   </section>
 
   <!-- Main Category Cards portal -->
   <section class="categories-container" style="padding-top: 2rem;">
-    <div class="section-header">
-      <h2>Explore Departments</h2>
-      <span style="color: var(--text-light); font-weight: 600;">3,000+ Products sorted</span>
-    </div>
+
     
     <div class="category-cards">
       <!-- Fresh Food Card -->
@@ -186,105 +242,105 @@
 
       <div class="shop-categories-grid">
 
-      <div class="shop-cat-card">
+      <a href="food-cupboard.html?parent=Biscuits %26 Crackers" class="shop-cat-card">
         <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=400&q=80" alt="Bakery" referrerpolicy="no-referrer">
         <span>Bakery</span>
-      </div>
+      </a>
 
-      <div class="shop-cat-card">
+      <a href="food-cupboard.html?parent=Breakfast Cereals %26 Bars" class="shop-cat-card">
         <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=400&q=80" alt="Breakfast Food" referrerpolicy="no-referrer">
         <span>Breakfast Food</span>
-      </div>
+      </a>
 
-      <div class="shop-cat-card">
+      <a href="beverages.html?parent=Coffee" class="shop-cat-card">
         <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=400&q=80" alt="Coffee & Tea" referrerpolicy="no-referrer">
         <span>Coffee &amp; Tea</span>
-      </div>
+      </a>
 
-      <div class="shop-cat-card">
+      <a href="fruits-veg.html?parent=Vegetables" class="shop-cat-card">
         <img src="https://images.unsplash.com/photo-1471193945509-9ad0617afabf?auto=format&fit=crop&w=400&q=80" alt="Condiments" referrerpolicy="no-referrer">
         <span>Condiments</span>
-      </div>
+      </a>
 
-      <div class="shop-cat-card">
+      <a href="food-cupboard.html?parent=Baking Essentials" class="shop-cat-card">
         <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=400&q=80" alt="Cooking & Baking" referrerpolicy="no-referrer">
         <span>Cooking &amp; Baking</span>
-      </div>
+      </a>
 
-      <div class="shop-cat-card">
+      <a href="fresh-food.html?parent=Dairy %26 Eggs" class="shop-cat-card">
         <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=400&q=80" alt="Dairy, Eggs & More" referrerpolicy="no-referrer">
         <span>Dairy, Eggs &amp; More</span>
-      </div>
+      </a>
 
-      <div class="shop-cat-card">
+      <a href="fresh-food.html?parent=Chilled Food Counter" class="shop-cat-card">
         <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=400&q=80" alt="Deli" referrerpolicy="no-referrer">
         <span>Deli</span>
-      </div>
+      </a>
 
-      <div class="shop-cat-card">
+      <a href="food-cupboard.html" class="shop-cat-card">
         <img src="https://images.unsplash.com/photo-1578916171728-46686eac8d58?auto=format&fit=crop&w=400&q=80" alt="Food Cupboard" referrerpolicy="no-referrer">
         <span>Food Cupboard</span>
-      </div>
+      </a>
 
-      <div class="shop-cat-card">
+      <a href="fresh-food.html?parent=Meat %26 Poultry&amp;child=Chicken" class="shop-cat-card">
         <img src="https://images.unsplash.com/photo-1590004953392-5aba2e72269a?auto=format&fit=crop&w=400&q=80" alt="Frozen Food" referrerpolicy="no-referrer">
         <span>Frozen Food</span>
-      </div>
+      </a>
 
-      <div class="shop-cat-card">
+      <a href="fruits-veg.html" class="shop-cat-card">
         <img src="https://images.unsplash.com/photo-1610348725531-843dff563e2c?auto=format&fit=crop&w=400&q=80" alt="Fruits & Vegetables" referrerpolicy="no-referrer">
         <span>Fruits &amp; Vegetables</span>
-      </div>
+      </a>
 
-      <div class="shop-cat-card">
+      <a href="fresh-food.html?parent=Dairy %26 Eggs&amp;child=Chilled Desserts" class="shop-cat-card">
         <img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?auto=format&fit=crop&w=400&q=80" alt="Ice Cream" referrerpolicy="no-referrer">
         <span>Ice Cream</span>
-      </div>
+      </a>
 
-      <div class="shop-cat-card">
+      <a href="food-cupboard.html?parent=Cooking Ingredients&amp;child=Oils %26 Ghee" class="shop-cat-card">
         <img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=400&q=80" alt="Oils, Ghee & More" referrerpolicy="no-referrer">
         <span>Oils, Ghee &amp; More</span>
-      </div>
+      </a>
 
-      <div class="shop-cat-card">
+      <a href="fresh-food.html?parent=Meat %26 Poultry" class="shop-cat-card">
         <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=400&q=80" alt="Poultry, Meat & Seafood" referrerpolicy="no-referrer">
         <span>Poultry, Meat &amp; Seafood</span>
-      </div>
+      </a>
 
-      <div class="shop-cat-card">
+      <a href="beverages.html" class="shop-cat-card">
         <img src="https://images.unsplash.com/photo-1563227812-0ea4c22e6cc8?auto=format&fit=crop&w=400&q=80" alt="Refreshes Everyday" referrerpolicy="no-referrer">
         <span>Refreshes Everyday</span>
-      </div>
+      </a>
 
-      <div class="shop-cat-card">
+      <a href="food-cupboard.html?parent=Rice, Pasta %26 Pulses" class="shop-cat-card">
         <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=400&q=80" alt="Rice & Pulses" referrerpolicy="no-referrer">
         <span>Rice &amp; Pulses</span>
-      </div>
+      </a>
 
-      <div class="shop-cat-card">
+      <a href="food-cupboard.html?parent=Nuts, Dates %26 Dried Fruits" class="shop-cat-card">
         <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=400&q=80" alt="Roastery" referrerpolicy="no-referrer">
         <span>Roastery</span>
-      </div>
+      </a>
 
-      <div class="shop-cat-card">
+      <a href="food-cupboard.html?parent=Chips, Dips %26 Snacks" class="shop-cat-card">
         <img src="https://images.unsplash.com/photo-1599490659213-e2b9527bd087?auto=format&fit=crop&w=400&q=80" alt="Snacks, Chocolate & More" referrerpolicy="no-referrer">
         <span>Snacks, Chocolate &amp; More</span>
-      </div>
+      </a>
 
-      <div class="shop-cat-card">
+      <a href="food-cupboard.html?parent=World Specialities" class="shop-cat-card">
         <img src="https://images.unsplash.com/photo-1432139555190-58524dae6a55?auto=format&fit=crop&w=400&q=80" alt="Speciality Food" referrerpolicy="no-referrer">
         <span>Speciality Food</span>
-      </div>
+      </a>
 
-      <div class="shop-cat-card">
+      <a href="beverages.html" class="shop-cat-card">
         <img src="https://images.unsplash.com/photo-1523362628745-0c100150b504?auto=format&fit=crop&w=400&q=80" alt="Water & Beverages" referrerpolicy="no-referrer">
         <span>Water &amp; Beverages</span>
-      </div>
+      </a>
 
-      <div class="shop-cat-card">
+      <a href="food-cupboard.html?parent=World Specialities" class="shop-cat-card">
         <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=400&q=80" alt="World Foods" referrerpolicy="no-referrer">
         <span>World Foods</span>
-      </div>
+      </a>
 
     </div>
   </section>
@@ -293,125 +349,25 @@
   <section class="categories-container" style="padding-top: 4rem;">
     <div class="section-header" style="margin-top: 0;">
       <h2>Popular Products</h2>
-      <span class="product-count-badge" id="product-count">833 Items</span>
+      <span class="product-count-badge" id="product-count">Loading...</span>
     </div>
 
-    <div class="products-grid">
-      <!-- Products render dynamically from cart.js -->
+        <div class="products-grid">
+      <!-- Premium Glassmorphism Skeleton Loading Cards -->
+      <div class="product-card-skeleton"><div class="skeleton-image"></div><div class="skeleton-info"><div class="skeleton-category"></div><div class="skeleton-title"></div><div class="skeleton-title-short"></div><div class="skeleton-row"><div class="skeleton-price"></div><div class="skeleton-btn"></div></div></div></div>
+      <div class="product-card-skeleton"><div class="skeleton-image"></div><div class="skeleton-info"><div class="skeleton-category"></div><div class="skeleton-title"></div><div class="skeleton-title-short"></div><div class="skeleton-row"><div class="skeleton-price"></div><div class="skeleton-btn"></div></div></div></div>
+      <div class="product-card-skeleton"><div class="skeleton-image"></div><div class="skeleton-info"><div class="skeleton-category"></div><div class="skeleton-title"></div><div class="skeleton-title-short"></div><div class="skeleton-row"><div class="skeleton-price"></div><div class="skeleton-btn"></div></div></div></div>
+      <div class="product-card-skeleton"><div class="skeleton-image"></div><div class="skeleton-info"><div class="skeleton-category"></div><div class="skeleton-title"></div><div class="skeleton-title-short"></div><div class="skeleton-row"><div class="skeleton-price"></div><div class="skeleton-btn"></div></div></div></div>
+      <div class="product-card-skeleton"><div class="skeleton-image"></div><div class="skeleton-info"><div class="skeleton-category"></div><div class="skeleton-title"></div><div class="skeleton-title-short"></div><div class="skeleton-row"><div class="skeleton-price"></div><div class="skeleton-btn"></div></div></div></div>
+      <div class="product-card-skeleton"><div class="skeleton-image"></div><div class="skeleton-info"><div class="skeleton-category"></div><div class="skeleton-title"></div><div class="skeleton-title-short"></div><div class="skeleton-row"><div class="skeleton-price"></div><div class="skeleton-btn"></div></div></div></div>
+      <div class="product-card-skeleton"><div class="skeleton-image"></div><div class="skeleton-info"><div class="skeleton-category"></div><div class="skeleton-title"></div><div class="skeleton-title-short"></div><div class="skeleton-row"><div class="skeleton-price"></div><div class="skeleton-btn"></div></div></div></div>
+      <div class="product-card-skeleton"><div class="skeleton-image"></div><div class="skeleton-info"><div class="skeleton-category"></div><div class="skeleton-title"></div><div class="skeleton-title-short"></div><div class="skeleton-row"><div class="skeleton-price"></div><div class="skeleton-btn"></div></div></div></div>
     </div>
 
     <!-- Pagination Container -->
     <div id="pagination-container" class="pagination-container"></div>
 
-    <!-- Let's Groove Audio Accessories Section -->
-    <section class="categories-container groove-audio-section" style="padding-top: 4rem; padding-bottom: 2rem;">
-      <div class="section-header" style="margin-top: 0; justify-content: center; margin-bottom: 3rem; border: none;">
-        <h2 class="groove-title" style="color: #F5A623; font-size: 2.75rem; text-align: center;">Let's Groove</h2>
-      </div>
 
-      <div class="groove-products-grid">
-        
-        <!-- Product 1 -->
-        <div class="groove-product-card">
-          <div class="groove-img-container">
-            <img src="https://image01.realme.net/general/20250109/1736415319795d54ca63564df4a429066610426dbb975.png.webp?width=1440&height=1440&size=376999" alt="realme Buds Wireless 5 ANC">
-          </div>
-          <div class="groove-details">
-            <h3>realme Buds Wireless 5 ANC</h3>
-            <p>Best ANC, Beast Battery Life</p>
-          </div>
-          <div class="groove-pricing">
-            <span class="groove-price">AED 1,399</span>
-            <div class="groove-badges">
-              <span class="groove-original-price">AED 2,799</span>
-              <span class="groove-offer-text">1400 Off</span>
-            </div>
-          </div>
-          <button class="add-to-cart-btn groove-add-btn" onclick="addToCart('buds-wireless-5-anc')" aria-label="Add realme Buds Wireless 5 ANC to cart">
-            <svg stroke="currentColor" fill="none" stroke-width="2.5" viewBox="0 0 24 24" height="1.2em" width="1.2em" xmlns="http://www.w3.org/2000/svg">
-              <line x1="12" y1="5" x2="12" y2="19"></line>
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-            </svg>
-          </button>
-        </div>
-
-        <!-- Product 2 -->
-        <div class="groove-product-card">
-          <div class="groove-img-container">
-            <img src="https://image01.realme.net/general/20250317/17422067439182f5867123e114ce09d2ef0306d1a8f9b.png.webp?width=1440&height=1440&size=1025011" alt="realme Buds Air7">
-          </div>
-          <div class="groove-details">
-            <h3>realme Buds Air7</h3>
-            <p>52dB Segment's Strongest ANC*</p>
-          </div>
-          <div class="groove-pricing">
-            <div class="groove-price-wrapper">
-              <span class="groove-price">AED 2,699</span>
-              <span class="groove-coupon-label">Coupon Price</span>
-            </div>
-            <div class="groove-badges">
-              <span class="groove-original-price">AED 4,899</span>
-              <span class="groove-offer-text">Up to 100 Coupon</span>
-            </div>
-          </div>
-          <button class="add-to-cart-btn groove-add-btn" onclick="addToCart('buds-air7')" aria-label="Add realme Buds Air7 to cart">
-            <svg stroke="currentColor" fill="none" stroke-width="2.5" viewBox="0 0 24 24" height="1.2em" width="1.2em" xmlns="http://www.w3.org/2000/svg">
-              <line x1="12" y1="5" x2="12" y2="19"></line>
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-            </svg>
-          </button>
-        </div>
-
-        <!-- Product 3 -->
-        <div class="groove-product-card">
-          <div class="groove-img-container">
-            <img src="https://image01.realme.net/general/20250519/1747633988406ef120377e0d14fc68f95246e96625de1.png.webp?width=1440&height=1440&size=813046" alt="realme Buds Air7 Pro">
-          </div>
-          <div class="groove-details">
-            <h3>realme Buds Air7 Pro</h3>
-            <p>The Sound Of Ai</p>
-          </div>
-          <div class="groove-pricing">
-            <span class="groove-price">AED 4,499</span>
-            <div class="groove-badges">
-              <span class="groove-original-price">AED 8,999</span>
-              <span class="groove-offer-text">Up to 500 Bank Offer</span>
-            </div>
-          </div>
-          <button class="add-to-cart-btn groove-add-btn" onclick="addToCart('buds-air7-pro')" aria-label="Add realme Buds Air7 Pro to cart">
-            <svg stroke="currentColor" fill="none" stroke-width="2.5" viewBox="0 0 24 24" height="1.2em" width="1.2em" xmlns="http://www.w3.org/2000/svg">
-              <line x1="12" y1="5" x2="12" y2="19"></line>
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-            </svg>
-          </button>
-        </div>
-
-        <!-- Product 4 -->
-        <div class="groove-product-card">
-          <div class="groove-img-container">
-            <img src="https://image01.realme.net/general/20241014/17288795936668c68fced6fb04cdb9365c8915f7fbd77.png.webp?width=1440&height=1440&size=282698" alt="realme Techlife Studio H1">
-          </div>
-          <div class="groove-details">
-            <h3>realme Techlife Studio H1</h3>
-            <p>Style Your Sound</p>
-          </div>
-          <div class="groove-pricing">
-            <span class="groove-price">AED 3,999</span>
-            <div class="groove-badges">
-              <span class="groove-original-price">AED 7,999</span>
-              <span class="groove-offer-text">Up to 500 Bank Offer</span>
-            </div>
-          </div>
-          <button class="add-to-cart-btn groove-add-btn" onclick="addToCart('techlife-studio-h1')" aria-label="Add realme Techlife Studio H1 to cart">
-            <svg stroke="currentColor" fill="none" stroke-width="2.5" viewBox="0 0 24 24" height="1.2em" width="1.2em" xmlns="http://www.w3.org/2000/svg">
-              <line x1="12" y1="5" x2="12" y2="19"></line>
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-            </svg>
-          </button>
-        </div>
-
-      </div>
-    </section>
 
     <!-- 3D Container Scroll Animation Section -->
     <section class="container-scroll-section" id="scroll-animation-container">
@@ -477,7 +433,6 @@
       
       <div class="testimonials-deck-wrapper">
         <div class="testimonials-deck" id="testimonials-deck">
-          
           <!-- Card 0 (Tarek) -->
           <div class="testimonial-shuffle-card position-front" data-index="0" id="card-0">
             <div class="card-google-header">
@@ -535,7 +490,7 @@
             <span class="testimonial-author">يوسف منصور (Youssef Mansour)</span>
           </div>
 
-        </div>
+          </div>
       </div>
       
       <div class="testimonials-shuffle-btn-wrapper">
@@ -638,7 +593,7 @@
         <p style="font-size: 0.95rem; font-weight: 600; color: #ffffff; margin-bottom: 0.25rem;" data-i18n="footer-visit-heading">Visit Us:</p>
         <p style="font-size: 0.85rem; color: var(--secondary); margin-bottom: 0.5rem;" data-i18n="footer-visit-value">Al Naseem Street - Al Rashidiya 1 - Ajman</p>
         <p style="font-size: 0.85rem; color: #cbd5e1; margin-bottom: 0.75rem;" data-i18n="footer-timings">Timings: Closes 2 AM - Reopens 8 AM</p>
-        <a href="https://www.google.com/search?q=baladi+hypermarket&oq=baladi+&gs_lcrp=EgZjaHJvbWUqDAgCEAAYFBiHAhiABDIGCAAQRRg5MgwIARAjGCcYgAQYigUyDAgCEAAYFBiHAhiABDIMCAMQABgUGIcCGIAEMgcIBBAAGIAEMgYIBRBFGDwyBggGEEUYPTIGCAcQRRg90gEINTU3MGowajSoAgCwAgE&sourceid=chrome&ie=UTF-8#lrd=0x3e5f59c3b38469f5:0xe8dafd806cca13f3,3,,,," target="_blank" class="footer-review-btn" data-i18n="footer-review">Leave a Review â˜…â˜…â˜…â˜…â˜…</a>
+        <a href="https://www.google.com/search?q=baladi+hypermarket&oq=baladi+&gs_lcrp=EgZjaHJvbWUqDAgCEAAYFBiHAhiABDIGCAAQRRg5MgwIARAjGCcYgAQYigUyDAgCEAAYFBiHAhiABDIMCAMQABgUGIcCGIAEMgcIBBAAGIAEMgYIBRBFGDwyBggGEEUYPTIGCAcQRRg90gEINTU3MGowajSoAgCwAgE&sourceid=chrome&ie=UTF-8#lrd=0x3e5f59c3b38469f5:0xe8dafd806cca13f3,3,,,," target="_blank" class="footer-review-btn" data-i18n="footer-review">Leave a Review ★★★★★</a>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.8398457007797!2d55.438865!3d25.4093006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f59c3b38469f5%3A0xe8dafd806cca13f3!2sBaladi%20Hypermarket!5e0!3m2!1sen!2sae!4v1716499800000!5m2!1sen!2sae" width="100%" height="120" style="border:0; border-radius: 8px; margin-top: 1rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <div class="footer-links">
@@ -739,6 +694,9 @@
       // Toggle active states on pills
       document.querySelectorAll('.filter-pill').forEach(pill => pill.classList.remove('active'));
       element.classList.add('active');
+      
+      // Reset pagination page to 1
+      if (window.resetCurrentPage) window.resetCurrentPage();
       
       // Perform filtering
       renderProductGrid(category, document.getElementById('search-input').value);

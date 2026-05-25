@@ -1,0 +1,1332 @@
+﻿[
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_1",
+        "tag":  "25% OFF",
+        "category":  "fresh-food",
+        "price":  12.49,
+        "name":  "California Maki 6 Pieces",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/2243780/1749719416/2243780_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Salads \u0026 Soup",
+        "unit":  "pc",
+        "id":  "p_ftg_2",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  8.99,
+        "name":  "Simply Good Garlic Sauce Spicy 220g",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/2262452/1761022804/2262452_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Salads \u0026 Soup",
+        "unit":  "pc",
+        "id":  "p_ftg_3",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  8.99,
+        "name":  "Simply Good Muhamara 220g",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/2262455/1764046804/2262455_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Salads \u0026 Soup",
+        "unit":  "pc",
+        "id":  "p_ftg_4",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  8.99,
+        "name":  "Simply Good Tarator 220g",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/2262454/1764046804/2262454_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Salads \u0026 Soup",
+        "unit":  "pc",
+        "id":  "p_ftg_5",
+        "tag":  "33% OFF",
+        "category":  "fresh-food",
+        "price":  12.99,
+        "name":  "Simply Good Guacamole 100g",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/2262457/1762251780/2262457_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Salads \u0026 Soup",
+        "unit":  "pc",
+        "id":  "p_ftg_6",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  7.99,
+        "name":  "Carrefour Hummus 150g",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/hc1/hd4/62538709827614/1787948_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Salads \u0026 Soup",
+        "unit":  "pc",
+        "id":  "p_ftg_7",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  6.99,
+        "name":  "Carrefour Garlic Paste 150g",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/h6f/h21/62538710417438/1793845_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_8",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  5.99,
+        "name":  "Hot Dog Roll With Cheese",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/979978/1759822677/979978_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Salads \u0026 Soup",
+        "unit":  "pc",
+        "id":  "p_ftg_9",
+        "tag":  "BESTSELLER",
+        "category":  "fresh-food",
+        "price":  11.4,
+        "name":  "Stuffed Grape Leaves",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/ha0/h66/12495886712862/374901_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Salads \u0026 Soup",
+        "unit":  "pc",
+        "id":  "p_ftg_10",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  15.49,
+        "name":  "Greek Salad with Feta Cheese 300g",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/h87/h04/49864444084254/1789026_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Ready Meals",
+        "unit":  "pc",
+        "id":  "p_ftg_11",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  5.99,
+        "name":  "Cheese Safeeha",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/979973/1747641603/979973_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Ready Meals",
+        "unit":  "pc",
+        "id":  "p_ftg_12",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  8.99,
+        "name":  "Chicken Mortadella with Mayo and Lettuce Sandwich 170g",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/1789102/1736242205/1789102_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Salads \u0026 Soup",
+        "unit":  "pc",
+        "id":  "p_ftg_13",
+        "tag":  "LOW PRICES",
+        "category":  "fresh-food",
+        "price":  6.42,
+        "name":  "Hummus",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/1717909/1746514803/1717909_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_14",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  12.49,
+        "name":  "Sushi Veggie Combo 8 Pieces",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/2243779/1749719416/2243779_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Salads \u0026 Soup",
+        "unit":  "pc",
+        "id":  "p_ftg_15",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  11.99,
+        "name":  "Fattoush with Bread Salad 300g",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/hf2/h4f/49864443953182/1789027_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Ready Meals",
+        "unit":  "pc",
+        "id":  "p_ftg_16",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  8.99,
+        "name":  "Chicken Mayo with Spinach Sandwich 150g",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/he0/h01/49864444117022/1789236_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Ready Meals",
+        "unit":  "pc",
+        "id":  "p_ftg_17",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  4.39,
+        "name":  "Sausage Croissant",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/843687/1758785898/843687_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Ready Meals",
+        "unit":  "pc",
+        "id":  "p_ftg_18",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  14.99,
+        "name":  "Chicken guacamole Wrap 260g",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/2219048/1737529204/2219048_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Ready Meals",
+        "unit":  "pc",
+        "id":  "p_ftg_19",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  16.49,
+        "name":  "Salmon Poke Bowl 294g",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/2237726/1774857600/2237726_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Salads \u0026 Soup",
+        "unit":  "pc",
+        "id":  "p_ftg_20",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  8,
+        "name":  "Mixed Grain Salad",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/1789398/1747130403/1789398_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_21",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  26.49,
+        "name":  "Sushi Daily Wakame California Roll 256g",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/h9d/h43/35174975930398/1903016_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Appetizers \u0026 Bites",
+        "unit":  "pc",
+        "id":  "p_ftg_22",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  14.99,
+        "name":  "Turkey And Cheese Croissant 140g",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/2219052/1737529204/2219052_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Appetizers \u0026 Bites",
+        "unit":  "pc",
+        "id":  "p_ftg_23",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  14.99,
+        "name":  "Tuna Mayo Sandwich Brown 280g",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/2219057/1737529204/2219057_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Ready Meals",
+        "unit":  "pc",
+        "id":  "p_ftg_24",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  5.99,
+        "name":  "Zaatar Cheese Safeeha",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/979974/1747641603/979974_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Ready Meals",
+        "unit":  "pc",
+        "id":  "p_ftg_25",
+        "tag":  "Bright Bites",
+        "category":  "fresh-food",
+        "price":  6.99,
+        "name":  "Bright Bites Triangle Tuna Sandwich Wholemeal Bread",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/2246082/1757858405/2246082_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Appetizers \u0026 Bites",
+        "unit":  "pc",
+        "id":  "p_ftg_26",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  17.49,
+        "name":  "Rigamonti Tramezzino Bresaola Sandwich 130g",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/hf3/he9/50242962259998/1316440_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_27",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  20.49,
+        "name":  "Carrefour Salmon Nigiri 6 Pieces",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/2259383/1760688004/2259383_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Ready Meals",
+        "unit":  "pc",
+        "id":  "p_ftg_28",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  6.49,
+        "name":  "Bright Bites Egg Spinach and Cheese Mini Muffin 4 Pieces",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/2246095/1757858405/2246095_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Ready Meals",
+        "unit":  "pc",
+        "id":  "p_ftg_29",
+        "tag":  "LOW PRICES",
+        "category":  "fresh-food",
+        "price":  13.99,
+        "name":  "Chicken Caesar Wrap 260g",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/he4/h61/34557615374366/1897964_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Salads \u0026 Soup",
+        "unit":  "pc",
+        "id":  "p_ftg_30",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  11.99,
+        "name":  "Simply Good Hummus Spicy 220g",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/2262456/1764046804/2262456_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_31",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  29.99,
+        "name":  "Sushi Daily Salmon Special 9 Pieces",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/1973413/1723208403/1973413_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Ready Meals",
+        "unit":  "pc",
+        "id":  "p_ftg_32",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  12.4,
+        "name":  "Pansit Canton",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/1787869/1747221394/1787869_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_33",
+        "tag":  "Bright Bites",
+        "category":  "fresh-food",
+        "price":  33.99,
+        "name":  "Sushi Daily California Crunch Roll 8 Pieces",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/h08/hab/63251618431006/1903022_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Appetizers \u0026 Bites",
+        "unit":  "pc",
+        "id":  "p_ftg_34",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  15.99,
+        "name":  "Turkey Cheese SW Cereal Bread 215g",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/2219059/1737529204/2219059_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Appetizers \u0026 Bites",
+        "unit":  "pc",
+        "id":  "p_ftg_35",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  8.99,
+        "name":  "Falafel Wrap 300g",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/1897965/1737535162/1897965_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Ready Meals",
+        "unit":  "pc",
+        "id":  "p_ftg_36",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  5.49,
+        "name":  "Bright Bites Egg Broccoli and Cheese Mini Muffin 4 Pieces",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/2246080/1757858405/2246080_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_37",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  3.99,
+        "name":  "Chicken Spring Roll 1 Piece",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/271461/1756886830/271461_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Salads \u0026 Soup",
+        "unit":  "pc",
+        "id":  "p_ftg_38",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  8.99,
+        "name":  "Dynamite Chicken with Mayo and Sriracha Sauce Sandwich 154g",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/1789028/1756589111/1789028_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Ready Meals",
+        "unit":  "pc",
+        "id":  "p_ftg_39",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  16.49,
+        "name":  "Iquality Spaghetti Bolognese 400g",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/he5/h59/9514293788702/1604146_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Ready Meals",
+        "unit":  "pc",
+        "id":  "p_ftg_40",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  20.39,
+        "name":  "Iquality Chicken Alfredo Fettuccini 400g",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/h5a/h05/9514294116382/1604148_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Ready Meals",
+        "unit":  "pc",
+        "id":  "p_ftg_41",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  17.49,
+        "name":  "Iquality Chicken Adobo 400g",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/1680434/1726563604/1680434_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Ready Meals",
+        "unit":  "pc",
+        "id":  "p_ftg_42",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  19.49,
+        "name":  "Iquality Penne Carbonara 400g",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/ha2/h60/9514293592094/1604147_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Ready Meals",
+        "unit":  "pc",
+        "id":  "p_ftg_43",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  15.49,
+        "name":  "Iquality Pancit Canton 400g",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/h61/h64/9514293461022/1604142_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_44",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  37.99,
+        "name":  "Sushi Daily Combo Two 8 Pieces",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/hd5/h37/34852090707998/1902972_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Ready Meals",
+        "unit":  "pc",
+        "id":  "p_ftg_45",
+        "tag":  "Bright Bites",
+        "category":  "fresh-food",
+        "price":  17.49,
+        "name":  "Iquality Chilli Chicken 400g",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/h01/h08/9514294083614/1604144_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Ready Meals",
+        "unit":  "pc",
+        "id":  "p_ftg_46",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  19.49,
+        "name":  "Gusto-Vero Pepperoni Pizza",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/h8e/hb8/13078234234910/1788808_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Appetizers \u0026 Bites",
+        "unit":  "pc",
+        "id":  "p_ftg_47",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  7.49,
+        "name":  "Bright Bites Turkey and Cheese Pinwheel Tortilla Wrap",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/2246097/1757858405/2246097_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Ready Meals",
+        "unit":  "pc",
+        "id":  "p_ftg_48",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  6.49,
+        "name":  "Bright Bites Triangle Turkey And Cheese Wholemeal Bread",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/2246072/1757858405/2246072_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Ready Meals",
+        "unit":  "pc",
+        "id":  "p_ftg_49",
+        "tag":  "Bright Bites",
+        "category":  "fresh-food",
+        "price":  6.49,
+        "name":  "Bright Bites Chicken Pizza Pinwheel Tortilla Wrap",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/2246078/1757858405/2246078_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_50",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  37.99,
+        "name":  "Sushi Daily Salmon Lover Menu 14 Pieces",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/2164566/1734732003/2164566_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_51",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  23.49,
+        "name":  "Sushi Daily Tuna Maki 6 Pieces",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/1928245/1734732003/1928245_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_52",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  22.99,
+        "name":  "Sushi Daily Tuna California Roll 8 Pieces",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/1928255/1723208403/1928255_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Appetizers \u0026 Bites",
+        "unit":  "pc",
+        "id":  "p_ftg_53",
+        "tag":  "Bright Bites",
+        "category":  "fresh-food",
+        "price":  9.49,
+        "name":  "Bright Bites Kitty Kit Turkey And Cheese Bread",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/2246083/1757805004/2246083_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_54",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  24.99,
+        "name":  "Sushi Daily Veggie Crunch Roll 8 Pieces",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/h99/h29/34852087529502/1902956_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_55",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  26.99,
+        "name":  "Sushi Daily Salmon Mango Spicy Roll 8 Pieces",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/2145343/1723208403/2145343_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_56",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  25.49,
+        "name":  "Sushi Daily Borito Feast 2 Pieces",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/1973414/1723208403/1973414_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_57",
+        "tag":  "BESTSELLER",
+        "category":  "fresh-food",
+        "price":  37.49,
+        "name":  "Sushi Daily Philadelphia Rolls 9 Pieces",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/h04/ha4/52097670840350/1928248_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_58",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  48.99,
+        "name":  "Sushi Daily Menu Two 12 Pieces",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/h56/h3d/34852088479774/1902943_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Salads \u0026 Soup",
+        "unit":  "pc",
+        "id":  "p_ftg_59",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  10.99,
+        "name":  "Carrefour Hummus 250g",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/h4f/h2e/62538710089758/1746334_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_60",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  85.99,
+        "name":  "Sushi Daily Flavours Mix 21 Pieces",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/h32/h9e/34852094312478/1903001_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_61",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  144.99,
+        "name":  "Sushi Daily Hikari Mix 36 Pieces",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/h84/h9d/34852094378014/1902977_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_62",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  9.99,
+        "name":  "Carrefour California Roll 9 Pieces",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/2259309/1765015804/2259309_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_63",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  134.99,
+        "name":  "Sushi Daily Maki Fun Mix 45 Pieces",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/h7c/hf6/34852093853726/1902992_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_64",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  6.99,
+        "name":  "Tuna Mayo Onigiri",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/2259308/1773732704/2259308_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_65",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  37.49,
+        "name":  "Sushi Daily Sashimi Duo 6 Pieces Box",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/ha3/h6f/52702487805982/1928247_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_66",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  38.99,
+        "name":  "Sushi Daily Salmon Poke 1 Pieces",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/h6d/h2b/35174975209502/1903031_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Salads \u0026 Soup",
+        "unit":  "pc",
+        "id":  "p_ftg_67",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  18.49,
+        "name":  "Tuna Nicoise Salad 370g",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/he7/hcd/49864442380318/1718050_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_68",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  69.49,
+        "name":  "Sushi Daily Sashimi Duo 14 Pieces",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/hff/h2f/34852087365662/1902957_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Ready Meals",
+        "unit":  "pc",
+        "id":  "p_ftg_69",
+        "tag":  "LOW PRICES",
+        "category":  "fresh-food",
+        "price":  15.96,
+        "name":  "Butter Chicken",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/1717892/1748840395/1717892_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Salads \u0026 Soup",
+        "unit":  "pc",
+        "id":  "p_ftg_70",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  17.49,
+        "name":  "Chicken Caesar Salad 205g",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/h78/hd5/49864442118174/1718049_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_71",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  39.99,
+        "name":  "Sushi Daily Salmon Dragon Roll 8 Pieces",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/hf4/h91/34852092444702/1902981_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Salads \u0026 Soup",
+        "unit":  "pc",
+        "id":  "p_ftg_72",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  10.99,
+        "name":  "Chicken Salad with Tomato and Cucumber Brown Bread Sandwich 205g",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/1718046/1726063204/1718046_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_73",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  62.49,
+        "name":  "Sushi Daily Menu Duo Salmon 18 Pieces",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/2164566/1734732003/2164566_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Ready Meals",
+        "unit":  "pc",
+        "id":  "p_ftg_74",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  3.99,
+        "name":  "Spinach Quiche",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/2219052/1737529204/2219052_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Salads \u0026 Soup",
+        "unit":  "pc",
+        "id":  "p_ftg_75",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  13.79,
+        "name":  "Barada Mutabal Eggplant Tahini 280g",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/2262452/1761022804/2262452_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_76",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  189.99,
+        "name":  "Sushi Daily Hanabi Party 64 Pieces",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/1973413/1723208403/1973413_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Appetizers \u0026 Bites",
+        "unit":  "pc",
+        "id":  "p_ftg_77",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  8.99,
+        "name":  "Tuna with Creamy Mayonnaise Sandwich 150g",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/1718044/1756588972/1718044_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Salads \u0026 Soup",
+        "unit":  "pc",
+        "id":  "p_ftg_78",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  12.79,
+        "name":  "Barada Garlic Sauce 280g",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/h6f/h6c/45676093210654/1837260_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Ready Meals",
+        "unit":  "pc",
+        "id":  "p_ftg_79",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  8.99,
+        "name":  "Chicken Tikka with Spiced Creamy Mayonnaise and Baby Spinach Sandwich 160g",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/h1b/hc1/49864442707998/1718041_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_80",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  35.99,
+        "name":  "Sushi Daily Combo 4 Green Mix 266g",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/h1c/h99/34852092674078/1902974_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_81",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  21.99,
+        "name":  "Sushi Daily Veggie Roll 9 Pieces",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/hf4/h43/35174975963166/1903026_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Ready Meals",
+        "unit":  "pc",
+        "id":  "p_ftg_82",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  18.99,
+        "name":  "Mulan Mongolian Beef",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/2293044/1777270200/2293044_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Ready Meals",
+        "unit":  "pc",
+        "id":  "p_ftg_83",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  5.6,
+        "name":  "Onion Quiche",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/2289760/1777464600/2289760_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Ready Meals",
+        "unit":  "pc",
+        "id":  "p_ftg_84",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  15.99,
+        "name":  "Mulan Stir Fried Noodle",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/2293042/1777270200/2293042_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Ready Meals",
+        "unit":  "pc",
+        "id":  "p_ftg_85",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  3.99,
+        "name":  "Tuna Quiche",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/2289759/1777464600/2289759_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Appetizers \u0026 Bites",
+        "unit":  "pc",
+        "id":  "p_ftg_86",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  8.99,
+        "name":  "Egg Mayonnaise with Baby Spinach Brown Bread Sandwich 157g",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/1718048/1726063204/1718048_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Ready Meals",
+        "unit":  "pc",
+        "id":  "p_ftg_87",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  18.99,
+        "name":  "Mulan Kung Pao Chicken",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/2293039/1777270200/2293039_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Ready Meals",
+        "unit":  "pc",
+        "id":  "p_ftg_88",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  18.99,
+        "name":  "Mulan Sweet \u0026 Sour Chicken with Pineapple",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/2293037/1777270200/2293037_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Appetizers \u0026 Bites",
+        "unit":  "pc",
+        "id":  "p_ftg_89",
+        "tag":  "Extra 10% off, code - FOOD10",
+        "category":  "fresh-food",
+        "price":  2.49,
+        "name":  "Vegetable Samosa",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/2286917/1773303000/2286917_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_90",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  34.99,
+        "name":  "Sushi Daily Spicy Tuna Roll 9 Pieces",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/hcd/h8a/34852092215326/1902991_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Ready Meals",
+        "unit":  "pc",
+        "id":  "p_ftg_91",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  18.99,
+        "name":  "Mulan Teriyaki Chicken Rice",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/2293038/1777270200/2293038_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Ready Meals",
+        "unit":  "pc",
+        "id":  "p_ftg_92",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  2.99,
+        "name":  "Chicken Samosa",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/2286912/1773303000/2286912_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_93",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  18.99,
+        "name":  "Sushi Daily Spicy Salmon Maki 6 Pieces",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/1928251/1723208403/1928251_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_94",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  31.99,
+        "name":  "Sushi Daily Veggie Poke 1 Pieces",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/h43/ha1/34852094246942/1902994_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_95",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  11.99,
+        "name":  "Sushi Daily Cucumber Maki 6 Pieces",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/hd7/h35/34852088217630/1902961_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_96",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  11.99,
+        "name":  "Sushi Daily Forgotten End 1 Pieces",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/ha8/h3c/34852088414238/1902964_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_97",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  54.49,
+        "name":  "Sushi Daily Menu Three 14 Pieces",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/h2e/h2c/35174975275038/1903030_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_98",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  31.99,
+        "name":  "Sushi Daily Californiafornia Roll 9 Pieces",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/h26/h44/34852088676382/1902970_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_99",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  29.99,
+        "name":  "Sushi Daily Californiafornia Masago Roll 8 Pieces",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/he5/h8c/34852094836766/1902996_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_100",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  39.49,
+        "name":  "Sushi Daily Spicy Salmon Crunch Roll 8 Pieces",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/hc7/h25/34852087660574/1902947_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_101",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  9.5,
+        "name":  "Sushi Daily Tuna Mayo Onigiri 1 Piece",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/2241802/1753966804/2241802_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Ready Meals",
+        "unit":  "pc",
+        "id":  "p_ftg_102",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  229,
+        "name":  "Camelicious Camel Milk Powder 20g X 24 Pieces",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/1792483/1761128183/1792483_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_103",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  12.15,
+        "name":  "Sushi Daily Salmon Masago Onigiri 1 Piece",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/2241804/1753966804/2241804_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Ready Meals",
+        "unit":  "pc",
+        "id":  "p_ftg_104",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  17.49,
+        "name":  "Gusto-Vero Vegetables Pizza",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/hdf/hcf/13721261441054/1791401_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_105",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  8.15,
+        "name":  "Sushi Daily Spicy Surimi Onigiri 1 Piece",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/2241803/1753966804/2241803_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_106",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  36.49,
+        "name":  "Sushi Daily Salmon Nigiri 6 Pieces",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/h5e/h25/35174975078430/1903020_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_107",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  25.49,
+        "name":  "Sushi Daily Spicy Veggie Crunch Roll 8 Pieces",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/hf5/hfb/34852093460510/1902966_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_108",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  38.49,
+        "name":  "Sushi Daily Salmon Crunch Roll 8 Pieces",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/h99/h36/34852088283166/1902944_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_109",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  37.49,
+        "name":  "Sushi Daily Spicy Salmon Roll 9 Pieces",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/hda/h32/34852088152094/1902967_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_110",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  39.49,
+        "name":  "Sushi Daily Menu One 9 Pieces",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/h5c/h92/35174976159774/1903018_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_111",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  45.49,
+        "name":  "Sushi Daily Salmon And Tuna Poke 1 Pieces",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/h3b/hfa/34852093722654/1902983_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_112",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  29.49,
+        "name":  "Sushi Daily Spicy California Roll 9 Pieces",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/hfe/ha9/34852089528350/1902963_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_113",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  18.99,
+        "name":  "Sushi Daily Veggie Verde Maki 6 Pieces",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/h00/ha8/34852094050334/1902995_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_114",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  25.99,
+        "name":  "Sushi Daily California Maki 6 Pieces",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/h5f/h8f/35174976094238/1903025_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_115",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  16.49,
+        "name":  "Sushi Daily Salmon Temaki 1 Pieces",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/hbd/hf2/34852093984798/1902986_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_116",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  21.99,
+        "name":  "Sushi Daily Combo Veggie 271g",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/hee/h2c/34852087431198/1902938_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_117",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  67.49,
+        "name":  "Sushi Daily Menu Duo Mix 20 Pieces",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/h64/h39/35174975635486/1903024_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_118",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  15.99,
+        "name":  "Sushi Daily Avocado Maki6 Pieces",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/hcc/h3c/35174975733790/1903023_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_119",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  14.99,
+        "name":  "Sushi Daily Discovery California Crunch Roll 4 Pieces",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/hb4/h96/34852094574622/1902997_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_120",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  38.99,
+        "name":  "Sushi Daily Maki Mix 12 Pieces",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/ha5/h90/34852094705694/1902976_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_121",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  24.49,
+        "name":  "Sushi Daily Salmon Maki 6 Pieces",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/1928251/1723208403/1928251_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_122",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  33.99,
+        "name":  "Sushi Daily Spring Vegan Menu 14 Pieces",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/2164566/1734732003/2164566_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_123",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  25.99,
+        "name":  "Sushi Daily Rollin 39 Salmon Cheese 6 Pieces",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/1973413/1723208403/1973413_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_124",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  25.99,
+        "name":  "Sushi Daily Salmon Verde Maki 6 Pieces",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/1928251/1723208403/1928251_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Ready Meals",
+        "unit":  "pc",
+        "id":  "p_ftg_125",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  31.49,
+        "name":  "Renna Grilled Champignon Mushrooms in Oil, 150g",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/hc1/hd4/62538709827614/1787948_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_126",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  63.45,
+        "name":  "Sushi Daily Onigiri Mix 3 Pieces",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/1973413/1723208403/1973413_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_127",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  27.99,
+        "name":  "Sushi Daily Cheese California Roll 9 Pieces",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/h08/hab/63251618431006/1903022_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_128",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  61.49,
+        "name":  "Sushi Daily Platter L18 Pieces",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/1973413/1723208403/1973413_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_129",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  43.49,
+        "name":  "Sushi Daily Combo One 10 Pieces",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/hd5/h37/34852090707998/1902972_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_130",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  25.99,
+        "name":  "Sushi Daily Wakame Veggie Roll 243g",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/h9d/h43/35174975930398/1903016_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_131",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  37.49,
+        "name":  "Sushi Daily Nigiri Duo 6 Pieces",
+        "image":  "https://cdn.mafrservices.com/sys-master-root/h5e/h25/35174975078430/1903020_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_132",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  36.49,
+        "name":  "Sushi Daily Wakame Salmon Roll 9 Pieces",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/2145343/1723208403/2145343_main.jpg?im=Resize=(300,300)"
+    },
+    {
+        "subcategory":  "Food To Go \u003e Sushi \u0026 Sashimi",
+        "unit":  "pc",
+        "id":  "p_ftg_133",
+        "tag":  "Fresh",
+        "category":  "fresh-food",
+        "price":  35.99,
+        "name":  "Sushi Daily Salmon Protein Mix 244g",
+        "image":  "https://cdn.mafrservices.com/pim-content/UAE/media/product/1973413/1723208403/1973413_main.jpg?im=Resize=(300,300)"
+    }
+]
